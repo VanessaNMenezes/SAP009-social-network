@@ -59,7 +59,7 @@
   opacity: 2.8;
   }
 
- #registerlogin-init {
+ #register-login-init {
   display: flex;  
   color: #EE8100;
   margin-left: 175px;
@@ -69,8 +69,11 @@
   text-decoration: underline;
   }
   
+#error-register {
+  font-size: 20px;
+}
 
-    footer {
-    display: flex;  
-    font-size: 12px;
-    }
+footer {
+  display: flex;  
+  font-size: 12px;
+  }

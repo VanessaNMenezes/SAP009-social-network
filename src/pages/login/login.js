@@ -5,7 +5,7 @@ export default () => {
   const loginContainer = document.createElement('div');
 
   const loginScreen = `
-  <section id='login-content-desktop'
+  <section id='login-content-desktop'>
     <form id='background-orange'>
       <h2 id='welcome'> Bem vindo (a) !</h2>
       <p id='quality'> 'A sua qualidade de vida é como um <span>bumerangue</span>, precisa ter movimento. Todas as ações que você lançar, voltarão em sua direção ainda mais fortes.' </p>
@@ -16,7 +16,7 @@ export default () => {
       <input class='padding-inputs' id='email' name='email' type='email' placeholder='E-MAIL' required/> 
       <input class='padding-inputs' id='password' name='password' type='password' placeholder='SENHA' > 
       <button id='enter-button'> ENTRAR </button>
-      <p id='error'> </p>
+      <p id='error-login'> </p>
       <p id='or-google'>ou</p> 
       <p id='login-google'>Faça login com sua conta </p><img src='assets/imagens/google.png' alt='Imagem google' id='image-google'> 
       <p id='google-account'> Não tem uma conta? </p>
@@ -24,9 +24,7 @@ export default () => {
       </form>
       <br><br>
     <footer> <strong> © BOOMERANG </strong> </footer>
-
     </section>
-
     </section>
   `;
   loginContainer.innerHTML = loginScreen;
@@ -35,7 +33,7 @@ export default () => {
   const buttonGoogle = loginContainer.querySelector('#image-google');
   const inputEmail = loginContainer.querySelector('#email');
   const inputPassword = loginContainer.querySelector('#password');
-  const errorMessage = loginContainer.querySelector('#error');
+  const errorMessage = loginContainer.querySelector('#error-login');
   const signUp = loginContainer.querySelector('#register');
 
   buttonEnter.addEventListener('click', (event) => {

@@ -1,5 +1,5 @@
 import { createUser } from '../../firebase/auth.js';
-import { validateRegister } from '../../firebase/error.js';
+import { errorMessages, validateRegister } from '../../firebase/error.js';
 
 export default () => {
   const registerContainer = document.createElement('div');
@@ -21,17 +21,18 @@ export default () => {
     <label class='registration-description' for='confirm-password'> CONFIRMAR SENHA </label>
     <input type='password' class='registration-content' id='confirm-password' name='confirm-password' required> 
     </form>
-    <button id='register-button' > CRIAR CONTA </button> 
-    <p id='error'></p>
+    <button id='register-button'> CRIAR CONTA </button> 
+    <p id='error-register'></p>
+    <p id='confirmation-message'> </p><br><br>
     <p id='google-account'> Já tem uma conta? </p>
-    <span id='registerlogin-init'>      ACESSE AQUI </span>
-    <p id='confirmation-message'> </p>
+    <span id='register-login-init'> ACESSE AQUI </span>
+    
   <footer> <strong> © BOOMERANG </strong> </footer>
   </section>
   `;
   registerContainer.innerHTML = registerScreen;
 
-  const registerlog = registerContainer.querySelector('#registerlogin-init');
+  const registerlog = registerContainer.querySelector('#register-login-init');
   registerlog.addEventListener('click', (e) => {
     e.preventDefault();
     window.history.back();
@@ -40,22 +41,21 @@ export default () => {
   const buttonRegister = registerContainer.querySelector('#register-button');
   buttonRegister.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log('funcioneio');
     const inputName = registerContainer.querySelector('#register-name');
     const inputEmail = registerContainer.querySelector('#register-email');
     const inputPassword = registerContainer.querySelector('#register-password');
-   
-    const errorMessage = registerContainer.querySelector('#error');
+    const errorMessage = registerContainer.querySelector('#error-register');
     const inputConfirmPassword = registerContainer.querySelector('#confirm-password');
+    const confirmationMessage = registerContainer.querySelector('#confirmation-message');
     const createLogin = validateRegister(inputName.value, inputEmail.value, inputPassword.value, inputConfirmPassword.value);
     if (inputName.value !== '' && inputEmail.value !== '' && inputPassword.value !== '' && inputConfirmPassword.value === inputPassword.value) {
       createUser(inputName.value, inputEmail.value, inputPassword.value)
         .then(() => {
-          errorMessage.innerHTML = 'CADASTRO REALIZADO COM SUCESSO!'+inputName+'&#x2705 <br> Agora, faça o login para entrar!';
+          confirmationMessage.innerHTML = `OLÁ ${inputName.value}!!! <br> SEU CADASTRO FOI REALIZADO COM SUCESSO! &#x2705 <br> Agora, faça o login para entrar!`;
           window.location.hash = '#login';
         })
         .catch(() => {
-          errorMessage.innerHTML = createLogin;
+          errorMessage.innerHTML = errorMessage(error);
         });
     } else {
       errorMessage.innerHTML = createLogin;

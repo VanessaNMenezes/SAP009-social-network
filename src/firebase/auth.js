@@ -18,7 +18,6 @@ export const userUID = () => auth.currentUser.uid;
 
 export function createUser(name, email, password) {
   return createUserWithEmailAndPassword(auth, email, password);
-   
 }
 
 
