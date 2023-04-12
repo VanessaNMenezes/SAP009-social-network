@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { createUser } from '../../firebase/auth.js';
 import { errorMessages, validateRegister } from '../../firebase/error.js';
 
@@ -47,15 +48,16 @@ export default () => {
     const errorMessage = registerContainer.querySelector('#error-register');
     const inputConfirmPassword = registerContainer.querySelector('#confirm-password');
     const confirmationMessage = registerContainer.querySelector('#confirmation-message');
+    // eslint-disable-next-line max-len
     const createLogin = validateRegister(inputName.value, inputEmail.value, inputPassword.value, inputConfirmPassword.value);
     if (inputName.value !== '' && inputEmail.value !== '' && inputPassword.value !== '' && inputConfirmPassword.value === inputPassword.value) {
-      createUser(inputName.value, inputEmail.value, inputPassword.value)
+      createUser(inputEmail.value, inputPassword.value)
         .then(() => {
           confirmationMessage.innerHTML = `OLÁ ${inputName.value}!!! <br> SEU CADASTRO FOI REALIZADO COM SUCESSO! &#x2705 <br> Agora, faça o login para entrar!`;
           window.location.hash = '#login';
         })
-        .catch(() => {
-          errorMessage.innerHTML = errorMessage(error);
+        .catch((error) => {
+          errorMessage.innerHTML = errorMessages(error);
         });
     } else {
       errorMessage.innerHTML = createLogin;

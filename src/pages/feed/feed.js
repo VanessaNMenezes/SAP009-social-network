@@ -4,25 +4,18 @@ export default () => {
   const feedScreen = `
     <section id='page-timeline'>
     <div class="div-logo-timeline">
-    <img src="./assets/logo-horizontal.png" id="ada-logo-timeline" class="logo-image-timeline" alt="logo da ConectAda">
+    <img src="./assets/logo-" id="logo-timeline" class="logo-image-timeline" alt="">
   </div>
   <nav role="navigation">
-  <div id="menuToggle">
-   
-    <input type="checkbox" />
-    
-   
+  <div id="menuToggle">   
     <span></span>
     <span></span>
-    <span></span>
-    
-   
+    <span></span>   
     <ul id="menu">
     <li><a href="#timeline">Home</a></li>
     <li><a href="#">Sobre</a></li>
     <li><a id="menu-sair" href="#">Sair</a></li>
   </ul>
-  
   </div>
 </nav>
      <div id='menu'>
@@ -35,7 +28,6 @@ export default () => {
       <button type="button" id="user-posts" class="post-type">Meus posts</button>
       <button type="button" id="user-favorites" class="post-type">Meus favoritos</button>
       </div>
-
       <div class="container-postList">
       $ListPost() 
       </div>
@@ -45,10 +37,8 @@ export default () => {
       <img src='assets/imagens/perfil.png'><p> PERFIL </p>
       <a href='#publish'> <img src='assets/imagens/publicar.png' alt='Imagem publicação' id='image-publish'> PUBLICAR </a>
       <a href='#login'> <img src='assets/imagens/logout.png' alt='Imagem publicação' id='image-publish'> SAIR </a>
-      <div>
-    
+      <div>    
       <img id='bumerangue-gif' src='assets/imagens/bumerangue.gif'>
-
       <input placeholder='criar-publicação'></input>
       <input placeholder='minha-publicação'></input>
       <input type='button' value='outra-pubicação'></input>
@@ -58,10 +48,37 @@ export default () => {
     `;
 
   feedContainer.innerHTML = feedScreen;
+  return feedContainer
+//* if (localStorage.getItem('editStatus') === 'true') {containerPost.querySelector('#textAreaPost').value = localStorage.getItem('postText');containerPost.querySelector('#selectSubjects').value = localStorage.getItem('postSubject');}
 
-   //COLOCAR AQUI OS AS MANIPULAÇÕES DINAMICAS DO DOM, PEGANDO OS IDS DO HTML E/OU CSS
-  // COLOCAR OS EVENTOS DOS BOTOES DE ENTRAR, ENTRAR C/ GOOGLE E CADASTRAR
-  // CRIAR AS CONDICIONAIS SE O EMAIL E/OU SENHA ESTIVEREM ERRADOS, OU SE O EMAIL JÁ FOR OU NÃO CADASTRADO, ETC...v
+  //*const submitPublish = containerPost.querySelector('#submitPublish');
 
-  return feedContainer;
-};
+  //*submitPublish.addEventListener('click', async (e) => {
+    //e.preventDefault();
+    //const postText = containerPost.querySelector('#textAreaPost').value;
+    //const postSubject = containerPost.querySelector('#selectSubjects').value;
+
+    //if (postText === '' || postSubject === 'typeTitle') {
+      // eslint-disable-next-line no-alert
+      //alert('Preencha todos os campos!');
+    //} else {
+      //if (localStorage.getItem('editStatus') === 'false') {
+        //await publishPost(postText, postSubject);
+      //} else {
+        //const postId = localStorage.getItem('postId');
+        //await editPost(postId, postText, postSubject);
+      //}
+
+      //window.location.hash = '#feed';
+    //}
+  //});
+
+ // const cancelPublish = containerPost.querySelector('#btnCancel');
+
+  //cancelPublish.addEventListener('click', (e) => {
+    //e.preventDefault();
+    //window.location.hash = '#feed';
+  //});
+
+  //return containerPost;
+//};

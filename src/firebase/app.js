@@ -12,7 +12,9 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig);
 
-  /*apiKey: "AIzaSyBrP9zD_eD3sddBj8uFgt1LgmidejxRudM",
+//export const app = initializeApp(firebaseConfig);
+// Initialize Firebase
+/*apiKey: "AIzaSyBrP9zD_eD3sddBj8uFgt1LgmidejxRudM",
   authDomain: "teste-social-nw.firebaseapp.com",
   projectId: "teste-social-nw",
   storageBucket: "teste-social-nw.appspot.com",
