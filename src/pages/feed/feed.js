@@ -48,37 +48,10 @@ export default () => {
     `;
 
   feedContainer.innerHTML = feedScreen;
-  return feedContainer
-//* if (localStorage.getItem('editStatus') === 'true') {containerPost.querySelector('#textAreaPost').value = localStorage.getItem('postText');containerPost.querySelector('#selectSubjects').value = localStorage.getItem('postSubject');}
 
-  //*const submitPublish = containerPost.querySelector('#submitPublish');
-
-  //*submitPublish.addEventListener('click', async (e) => {
-    //e.preventDefault();
-    //const postText = containerPost.querySelector('#textAreaPost').value;
-    //const postSubject = containerPost.querySelector('#selectSubjects').value;
-
-    //if (postText === '' || postSubject === 'typeTitle') {
-      // eslint-disable-next-line no-alert
-      //alert('Preencha todos os campos!');
-    //} else {
-      //if (localStorage.getItem('editStatus') === 'false') {
-        //await publishPost(postText, postSubject);
-      //} else {
-        //const postId = localStorage.getItem('postId');
-        //await editPost(postId, postText, postSubject);
-      //}
-
-      //window.location.hash = '#feed';
-    //}
-  //});
-
- // const cancelPublish = containerPost.querySelector('#btnCancel');
-
-  //cancelPublish.addEventListener('click', (e) => {
-    //e.preventDefault();
-    //window.location.hash = '#feed';
-  //});
+   //COLOCAR AQUI OS AS MANIPULAÇÕES DINAMICAS DO DOM, PEGANDO OS IDS DO HTML E/OU C
+  // COLOCAR OS EVENTOS DOS BOTOES DE ENTRAR, ENTRAR C/ GOOGLE E CADASTRAR
+  // CRIAR AS CONDICIONAIS SE O EMAIL E/OU SENHA ESTIVEREM ERRADOS, OU SE O EMAIL JÁ FOR OU NÃO CADASTRADO, ETC...v
 
   //return containerPost;
 //};
