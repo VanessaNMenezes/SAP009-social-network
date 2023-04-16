@@ -179,6 +179,6 @@ melhorias.
 
 ***
 
-### ESTE PROJETO FOI CRIADO E DESENVOLVIDO POR: 🪃 [THALITA NASCIMENTO](https://github.com/THALINascimento) & [VANESSA MENEZES](https://github.com/VanessaNMenezes) 🧡
+####  🪃 ESTE PROJETO FOI CRIADO E DESENVOLVIDO POR: [THALITA NASCIMENTO](https://github.com/THALINascimento) & [VANESSA MENEZES](https://github.com/VanessaNMenezes) 🧡
 
 ***
