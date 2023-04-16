@@ -1,6 +1,7 @@
 ## <div align="center"> 💻 📱 CRIANDO UMA REDE SOCIAL 📱 💻 </div>
 
 # <div align="center"> 🪃 QA: Qualidade de Ações </div>
+
 ### <div align="center"> Incentivando a prática de atividade física 🧡🏀 </div>
 
 <div align="center"> <img src= "src/assets/imagens/logo.png" width ="400px" height = "200px"/>
