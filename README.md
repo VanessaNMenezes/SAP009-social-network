@@ -48,7 +48,7 @@ somente após o usuário ter realizado o aprimoramento na qualidade de suas aç�
 publicações de outros usuários.
 
 **De que forma poderá ser feito?**
-O usuário poderá realizar publicações sobre a ação que realizou naquele dia:
+O usuário poderá realizar publicações sobre a ação que realizou naquele dia: 
 • Qual foi a atividade física.
 • As características da atividade (local, duração, intensidade).
 • Quais melhorias a prática trouxe para seu bem-estar físico.
@@ -135,7 +135,7 @@ Através dos resultados obtidos, iteramos nossos desenhos de interface, aplicand
 
 ***
 
-## E quais objetivos foram alcançados neste projeto?
+## E quais objetivos foram alcançados neste projeto? 
 
 (🪃) Ser uma SPA.
 (🪃) Ser _responsivo_.
