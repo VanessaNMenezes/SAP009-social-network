@@ -1,6 +1,6 @@
 #### <div align="center"> 💻 📱 CRIANDO UMA REDE SOCIAL 📱 💻 </div>
 
-## <div align="center"> 🪃 QA: Qualidade de Ações -  Incentivando a prática de atividade física 🧡🏀 </div>
+## <div align="center"> 🪃 QA: Qualidade de Ações -  Incentivando a prática de atividade física 🧡</div>
 
 <div align="center"> <img src= "src/assets/imagens/logo.png" width ="500px" height = "250px"/>
 
