@@ -96,8 +96,8 @@ baseadas atráves de protótipos de baixa e alta fidelidades, ambos construídos
 Nesta interface, aplicamos o conceito de Mobile-first. Definimos qual seria o fluxo 
 que o usuário seguiria dentro da nossa rede e, com isso, criamos a interface do usuário (UI), que seguisse este fluxo. Desenhamos a ideia do posicionamento de cada elemento nas páginas, uma a uma, de maneira simples, com baixo grau de detalhamento, e os identificamos.
 
-<img src= "src/assets/imgs-readme/prototipo-baixa1.png" width = "750px" height = "500px"/> 
-<img src= "src/assets/imgs-readme/prototipo-baixa2.png" width = "750px" height = "500px"/> 
+<img src= "src/assets/imgs-readme/prototipo-baixa1.png" width = "650px" height = "400px"/> 
+<img src= "src/assets/imgs-readme/prototipo-baixa2.png" width = "650px" height = "400px"/> 
 
 
 ## PROTÓTIPO DE ALTA FIDELIDADE MOBILE:
