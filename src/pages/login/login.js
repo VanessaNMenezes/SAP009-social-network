@@ -13,7 +13,6 @@ export default () => {
       <h2 id='actions'> Melhore suas ações, <br> pratique atividade física! </h2>
        </div>
       </section> 
-
       <section class='login-container'>
       <figure> <img src='assets/imagens/logo.png' id='login-logo' alt='Logotipo QA- Qualidade de ações'> </figure>
       <input class='padding-inputs' id='email' name='email' type='email' placeholder='E-MAIL' required/> 

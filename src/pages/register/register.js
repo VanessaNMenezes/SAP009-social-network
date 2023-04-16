@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { createUser } from '../../firebase/auth.js';
 import { errorMessages, validateRegister } from '../../firebase/error.js';
 
@@ -23,10 +22,10 @@ export default () => {
     <input type='password' class='registration-content' id='confirm-password' name='confirm-password' required> 
     </form>
     <button id='register-button' > CRIAR CONTA </button> 
-    <p id='error'></p>
+    <p id='error-register'></p> 
+    <p id='confirmation-message'> </p> <br> <br>
     <p id='google-account'> Já tem uma conta? </p>
-    <span id='registerlogin-init'>      ACESSE AQUI </span>
-    <p id='confirmation-message'> </p>
+    <span id='register-login-init'> ACESSE AQUI </span>
   <footer> <strong> © BOOMERANG </strong> </footer>
   </section>
   `;
@@ -44,15 +43,16 @@ export default () => {
     const inputName = registerContainer.querySelector('#register-name');
     const inputEmail = registerContainer.querySelector('#register-email');
     const inputPassword = registerContainer.querySelector('#register-password');
-   
-    const errorMessage = registerContainer.querySelector('#error');
     const inputConfirmPassword = registerContainer.querySelector('#confirm-password');
+    const errorMessage = registerContainer.querySelector('#error-register');
+    const confirmationMessage = registerContainer.querySelector('#confirmation-message');
+
+    // eslint-disable-next-line max-len
     const createLogin = validateRegister(inputName.value, inputEmail.value, inputPassword.value, inputConfirmPassword.value);
     if (inputName.value !== '' && inputEmail.value !== '' && inputPassword.value !== '' && inputConfirmPassword.value === inputPassword.value) {
       createUser(inputEmail.value, inputPassword.value)
         .then(() => {
-          errorMessage.innerHTML = 'CADASTRO REALIZADO COM SUCESSO!'+inputName+'&#x2705 <br> Agora, faça o login para entrar!';
-          window.location.hash = '#login';
+          confirmationMessage.innerHTML = `OLÁ ${inputName.value}!!! <br> SEU CADASTRO FOI REALIZADO COM SUCESSO! &#x2705 <br> Agora, faça o login para entrar!`;
         })
         .catch((error) => {
           errorMessage.innerHTML = errorMessages(error);

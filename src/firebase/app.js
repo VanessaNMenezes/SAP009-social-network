@@ -7,4 +7,7 @@ const firebaseConfig = {
   storageBucket: 'social-network-qa-1f7b1.appspot.com',
   messagingSenderId: '907982436738',
   appId: '1:907982436738:web:9608cd63b779f3d253f79b',
-  measurementId: 'G-VZJGTTHMW8',*/
+  measurementId: 'G-VZJGTTHMW8',
+};
+
+export const app = initializeApp(firebaseConfig);
