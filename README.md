@@ -2,7 +2,7 @@
 
 ## <div align="center"> 🪃 QA: Qualidade de Ações -  Incentivando a prática de atividade física 🧡🏀 </div>
 
-<div align="center"> <img src= "src/assets/imagens/logo.png" width ="400px" height = "200px"/>
+<div align="center"> <img src= "src/assets/imagens/logo.png" width ="500px" height = "300px"/>
 
 _"A sua **qualidade de vida** é como um bumerangue, precisa ter **movimento**. Todas as **ações** que você lançar, **voltarão** em sua direção ainda mais fortes."_ 
 
