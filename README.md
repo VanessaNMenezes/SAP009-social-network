@@ -20,13 +20,13 @@ Neste projeto, construímos uma Rede Social sobre melhoria da qualidade de vida,
 
 ## DEFINIÇÃO DO PRODUTO
 
-* Objetivo principal
-* • Proporcionar a melhoria da qualidade de vida, através do aumento de bem-estar físico.
+* Objetivo principal  
+• Proporcionar a melhoria da qualidade de vida, através do aumento de bem-estar físico.
 
-* Objetivos secundários:
-• Despertar para a importância da ação, do movimento.
-• Incentivar a prática de atividade física, com foco no bem-estar físico.
-• Compartilhar conhecimento sobre os pilares da qualidade de vida.
+* Objetivos secundários:  
+• Despertar para a importância da ação, do movimento.  
+• Incentivar a prática de atividade física, com foco no bem-estar físico.  
+• Compartilhar conhecimento sobre os pilares da qualidade de vida.  
 • Garantir a compreensão de que a melhoria do bem estar-físico gera consequentemente a
 melhoria dos outros pilares.
 
@@ -37,7 +37,9 @@ Em nossa rede social, para ser possível a interação do usuário, é necessár
 **Como assim?** É simples, esta rede social vai além de conectar usuários que
 sejam realmente iniciantes da prática de algum tipo de atividade física e que
 compartilham os objetivos acima, principalmente o de melhorar a qualidade de vida. 
-Para ser um usuário ativo que pode interagir com os outros usuários, pulicar e editar posts, dar e remover likes, é **INDISPENSÁVEL** que o mesmo disponha de **AÇÃO**,      
+Para ser um usuário ativo que pode interagir com os outros usuários, pulicar e editar  
+ 
+ posts, dar e remover likes, é **INDISPENSÁVEL** que o mesmo disponha de **AÇÃO**,      
 de movimento fora do ambiente virtual.
 
 **E como faremos isso?** Primeiro, é necessário o interesse de melhorar a
