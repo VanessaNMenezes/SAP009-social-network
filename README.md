@@ -96,8 +96,8 @@ baseadas atráves de protótipos de baixa e alta fidelidades, ambos construídos
 Nesta interface, aplicamos o conceito de Mobile-first. Definimos qual seria o fluxo 
 que o usuário seguiria dentro da nossa rede e, com isso, criamos a interface do usuário (UI), que seguisse este fluxo. Desenhamos a ideia do posicionamento de cada elemento nas páginas, uma a uma, de maneira simples, com baixo grau de detalhamento, e os identificamos.
 
-<img src= "src/assets/imgs-readme/prototipo-baixa1.png" width = "750px" height = "600px"/> 
-<img src= "src/assets/imgs-readme/prototipo-baixa2.png" width = "750px" height = "600px"/> 
+<img src= "src/assets/imgs-readme/prototipo-baixa1.png" width = "750px" height = "700px"/> 
+<img src= "src/assets/imgs-readme/prototipo-baixa2.png" width = "750px" height = "700px"/> 
 
 
 ## PROTÓTIPO DE ALTA FIDELIDADE MOBILE:
@@ -107,8 +107,8 @@ o posicionamento de cada elemento, pigmentamos com a palheta de cores escolhida,
 desenhamos com alto grau de detalhamento, apresentamos visualmente a funcionalidade
 e reproduzimos fielmente o produto final em termos de design.
 
-<img src= "src/assets/imgs-readme/prototipo-alta1.png" width = "750px" height = "500px"/> 
-<img src= "src/assets/imgs-readme/prototipo-alta2.png" width = "750px" height = "500px"/> 
+<img src= "src/assets/imgs-readme/prototipo-alta1.png" width = "750px" height = "700px"/> 
+<img src= "src/assets/imgs-readme/prototipo-alta2.png" width = "750px" height = "700px"/> 
 
 
 ## PROTÓTIPO DE ALTA FIDELIDADE DESKTOP:
@@ -179,8 +179,6 @@ melhorias.
 
 ***
 
-### ESTE PROJETO FOI CRIADO E DESENVOLVIDO POR:
-
-### 🪃 [THALITA NASCIMENTO](https://github.com/THALINascimento) & [VANESSA MENEZES](https://github.com/VanessaNMenezes) 🧡
+### ESTE PROJETO FOI CRIADO E DESENVOLVIDO POR: 🪃 [THALITA NASCIMENTO](https://github.com/THALINascimento) & [VANESSA MENEZES](https://github.com/VanessaNMenezes) 🧡
 
 ***
