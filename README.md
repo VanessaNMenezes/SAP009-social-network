@@ -20,14 +20,14 @@ Neste projeto, construímos uma Rede Social sobre melhoria da qualidade de vida,
 
 ## DEFINIÇÃO DO PRODUTO
 
-* Objetivo principal  
-• Proporcionar a melhoria da qualidade de vida, através do aumento de bem-estar físico.
+🔶 Objetivo principal  
+🔸 Proporcionar a melhoria da qualidade de vida, através do aumento de bem-estar físico.
 
-* Objetivos secundários:  
-• Despertar para a importância da ação, do movimento.  
-• Incentivar a prática de atividade física, com foco no bem-estar físico.  
-• Compartilhar conhecimento sobre os pilares da qualidade de vida.  
-• Garantir a compreensão de que a melhoria do bem estar-físico gera consequentemente a
+🔶 Objetivos secundários:  
+🔸 Despertar para a importância da ação, do movimento.  
+🔸 Incentivar a prática de atividade física, com foco no bem-estar físico.  
+🔸 Compartilhar conhecimento sobre os pilares da qualidade de vida.  
+🔸 Garantir a compreensão de que a melhoria do bem estar-físico gera consequentemente a
 melhoria dos outros pilares.
 
 **Público-alvo**: Iniciantes (ou interessados a iniciar) a prática de atividade física.
@@ -48,23 +48,23 @@ publicações de outros usuários.
 
 **De que forma poderá ser feito?**  
 O usuário poderá realizar publicações sobre a ação que realizou naquele dia:   
-• Qual foi a atividade física.  
-• As características da atividade (local, duração, intensidade).  
-• Quais melhorias a prática trouxe para seu bem-estar físico.  
-• Quais melhorias a prática trouxe para os outros pilares da vida (sono,
+🔸 Qual foi a atividade física.  
+🔸 As características da atividade (local, duração, intensidade).  
+🔸 Quais melhorias a prática trouxe para seu bem-estar físico.  
+🔸 Quais melhorias a prática trouxe para os outros pilares da vida (sono,
 humor, saúde mental, relacionamentos social /familiar / profissional).
 
 **De que forma acontecem as interações?**
 
 O usuário poderá visualizar outras publicações e reagir sobre elas!  
 
-• Poderá curtir a prática realizada por outro usuário (💛)  
-• Poderá reagir se a prática realizada foi a mesma que a dele (🤝)  
-• Poderá reagir se a melhoria do bem-esta físico foi a mesma que a dele (😉)  
-• Poderá reagir se a melhoria dos outros pilares foi a mesma que a dele, sendo:  
-• Melhoria do sono (😴)  
-• Melhoria do humor (😁)  
-• Melhoria da saúde mental (💆)
+🔸 Poderá curtir a prática realizada por outro usuário (💛)  
+🔸 Poderá reagir se a prática realizada foi a mesma que a dele (🤝)  
+🔸 Poderá reagir se a melhoria do bem-esta físico foi a mesma que a dele (😉)  
+🔸 Poderá reagir se a melhoria dos outros pilares foi a mesma que a dele, sendo:  
+🔸 Melhoria do sono (😴)  
+🔸 Melhoria do humor (😁)  
+🔸 Melhoria da saúde mental (💆)
 
 ***
 
@@ -136,42 +136,42 @@ Através dos resultados obtidos, iteramos nossos desenhos de interface, aplicand
 
 ## E quais objetivos foram alcançados neste projeto?   
 
-(🪃) Ser uma SPA.   
-(🪃) Ser _responsivo_.  
-(🪃) Fazer _tests_ unitários.  
-(🪃) Fazer testes manuais buscando erros e imperfeições simples.  
-(🪃) Fazer testes de usabilidade e incorporar o _feedback_ dos usuários como
+(🔶) Ser uma SPA.   
+(🔶) Ser _responsivo_.  
+(🔶) Fazer _tests_ unitários.  
+(🔶) Fazer testes manuais buscando erros e imperfeições simples.  
+(🔶) Fazer testes de usabilidade e incorporar o _feedback_ dos usuários como
 melhorias.  
 
 #### Criação e login de conta de usuário: 
 
   
-(🪃) Para o _login_ e postagens na timeline, utilizamos o Firebase.  
-(🪃) O usuário deve poder criar uma conta de acesso ou autenticar-se com conta de
+(🔶) Para o _login_ e postagens na timeline, utilizamos o Firebase.  
+(🔶) O usuário deve poder criar uma conta de acesso ou autenticar-se com conta de
     e-mail e senha e também com uma conta do Google.  
-(🪃) Somente usuários com contas válidas têm acesso permitido.  
-(🪃) Não haver usuários repetidos.  
-(🪃) O que o usuário digita no campo de senha (_input_) deve ser secreto.  
-(🪃) Quando o formulário de registro ou login é enviado, ele deve ser validado.  
-(🪃) Se houver erros, mensagens descritivas devem ser exibidas para ajudar o
+(🔶) Somente usuários com contas válidas têm acesso permitido.  
+(🔶) Não haver usuários repetidos.  
+(🔶) O que o usuário digita no campo de senha (_input_) deve ser secreto.  
+(🔶) Quando o formulário de registro ou login é enviado, ele deve ser validado.  
+(🔶) Se houver erros, mensagens descritivas devem ser exibidas para ajudar o
     usuário.  
 
 #### Timeline/linha do tempo:
 
 
-(🪃) Ao publicar, deve ser validado se há conteúdo no _input_.  
-(🪃) Ao recarregar o aplicativo, é necessário verificar se o usuário está
+(🔶) Ao publicar, deve ser validado se há conteúdo no _input_.  
+(🔶) Ao recarregar o aplicativo, é necessário verificar se o usuário está
     _logado_ antes de exibir o conteúdo.  
-(🪃) Conseguir publicar um _post_.  
-(🪃) Poder dar e remover _likes_ em uma publicação. Máximo de um por usuário.    
-(🪃) Visualizar contagem de _likes_.  
-(🪃) Poder excluir uma postagem específica.  
-(🪃) Solicitar confirmação antes de excluir um _post_.  
-(🪃) Ao clicar em editar um _post_, você deve alterar o texto para um _input_ que
+(🔶) Conseguir publicar um _post_.  
+(🔶) Poder dar e remover _likes_ em uma publicação. Máximo de um por usuário.    
+(🔶) Visualizar contagem de _likes_.  
+(🔶) Poder excluir uma postagem específica.  
+(🔶) Solicitar confirmação antes de excluir um _post_.  
+(🔶) Ao clicar em editar um _post_, você deve alterar o texto para um _input_ que
     permite editar o texto e salvar as alterações.    
-(🪃) Ao salvar as alterações, você deve voltar ao texto normal, mas com a
+(🔶) Ao salvar as alterações, você deve voltar ao texto normal, mas com a
     informação editada.  
-(🪃) Ao recarregar a página, poder ver os textos editados.
+(🔶) Ao recarregar a página, poder ver os textos editados.
 
 ***
 
