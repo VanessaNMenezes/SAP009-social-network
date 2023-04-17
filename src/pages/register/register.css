@@ -1,11 +1,19 @@
 #register-content-desktop {
   display: none;    
 }
-      
-.register-container {
+
+#register-new {
+  display: none;  
+}
+
+input {
+  font-size: 25px;
+}
+
+.register-container-new{
 position: absolute;
-width: 90vw;
-height: 90vh;   
+width: 100vw;
+height: 100vh;   
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
@@ -22,7 +30,7 @@ margin-top: 10px;
   
 .registration-description {
 display: flex;
-font-size: 25px;      
+font-size: 18px;      
 }
   
 .registration-content {
@@ -57,21 +65,28 @@ color: #ffffff;
 opacity: 2.8;
 }
 
-#register-login-init {
-display: flex;  
-color: #EE8100;
-margin-left: 175px;
-margin-top: -58px;
-cursor: pointer;
-text-decoration: underline;
-text-decoration-color: #EE8100; 
-}
+#google-account-register {   
+  display: flex;   
+  font-size: 20px; 
+  margin-left: -70px;  
+  }
 
-footer {
-display: flex;  
-font-size: 12px;
-}
+  #register-login-init {
+    display: flex;  
+    color: #EE8100;
+    margin-left: 220px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #EE8100; 
+    margin-top: -33px;
+    }
 
-#error-message {
-font-size: 30px;   
-}
+  footer {
+    display: flex;  
+    font-size: 12px;
+   
+    }
+    
+    #error-message {
+    font-size: 30px;   
+    }
