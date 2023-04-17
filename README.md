@@ -145,11 +145,10 @@ melhorias.
 
 #### Criação e login de conta de usuário. 
 
-* _Login_ com Firebase:  
+  
 (🪃) Para o _login_ e postagens na timeline, utilizamos o Firebase.  
 (🪃) O usuário deve poder criar uma conta de acesso ou autenticar-se com conta de
     e-mail e senha e também com uma conta do Google.  
-    * Validações:  
 (🪃) Somente usuários com contas válidas têm acesso permitido.  
 (🪃) Não haver usuários repetidos.  
 (🪃) O que o usuário digita no campo de senha (_input_) deve ser secreto.  
@@ -160,9 +159,8 @@ melhorias.
 
 #### Timeline/linha do tempo:
 
- * Validações:
+
 (🪃) Ao publicar, deve ser validado se há conteúdo no _input_.  
-* Comportamento:
 (🪃) Ao recarregar o aplicativo, é necessário verificar se o usuário está
     _logado_ antes de exibir o conteúdo.  
 (🪃) Conseguir publicar um _post_.  
