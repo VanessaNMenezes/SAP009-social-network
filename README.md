@@ -143,7 +143,7 @@ Através dos resultados obtidos, iteramos nossos desenhos de interface, aplicand
 (🪃) Fazer testes de usabilidade e incorporar o _feedback_ dos usuários como
 melhorias.  
 
-#### Criação e login de conta de usuário. 
+#### Criação e login de conta de usuário: 
 
   
 (🪃) Para o _login_ e postagens na timeline, utilizamos o Firebase.  
