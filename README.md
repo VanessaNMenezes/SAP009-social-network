@@ -20,10 +20,10 @@ Neste projeto, construímos uma Rede Social sobre melhoria da qualidade de vida,
 
 ## DEFINIÇÃO DO PRODUTO
 
-🔶 Objetivo principal  
+ **Objetivo principal**  
 🔸 Proporcionar a melhoria da qualidade de vida, através do aumento de bem-estar físico.
 
-🔶 Objetivos secundários:  
+ **Objetivos secundários**:  
 🔸 Despertar para a importância da ação, do movimento.  
 🔸 Incentivar a prática de atividade física, com foco no bem-estar físico.  
 🔸 Compartilhar conhecimento sobre os pilares da qualidade de vida.  
