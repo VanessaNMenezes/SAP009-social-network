@@ -145,16 +145,16 @@ melhorias.
 
 #### Criação e login de conta de usuário. 
 
-* _Login_ com Firebase:. 
-(🪃) Para o _login_ e postagens na timeline, utilizamos o Firebase.    
+* _Login_ com Firebase:  
+(🪃) Para o _login_ e postagens na timeline, utilizamos o Firebase. 
 (🪃) O usuário deve poder criar uma conta de acesso ou autenticar-se com conta de
-    e-mail e senha e também com uma conta do Google.  
-* Validações:. 
-(🪃) Somente usuários com contas válidas têm acesso permitido.      
+    e-mail e senha e também com uma conta do Google. 
+* Validações:  
+(🪃) Somente usuários com contas válidas têm acesso permitido. 
 (🪃) Não haver usuários repetidos. 
-(🪃) O que o usuário digita no campo de senha (_input_) deve ser secreto.    
-* Comportamento:. 
-(🪃) Quando o formulário de registro ou login é enviado, ele deve ser validado.    
+(🪃) O que o usuário digita no campo de senha (_input_) deve ser secreto. 
+* Comportamento:  
+(🪃) Quando o formulário de registro ou login é enviado, ele deve ser validado. 
 (🪃) Se houver erros, mensagens descritivas devem ser exibidas para ajudar o
     usuário.  
 
