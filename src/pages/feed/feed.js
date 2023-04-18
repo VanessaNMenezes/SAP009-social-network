@@ -13,19 +13,28 @@ export default () => {
 
   const feedScreenMenu = `
   <section class='register-container-feed'>
+    <div id='menu-top'>      
+        <figure id='button-logout-sair'> <img src='assets/imagens/logout.png' alt='Imagem sair' id='button-logout'>SAIR </figure>
+        <img id='bumerangue-gif-feed' src='assets/imagens/bumerangue.gif'>
+    </div>
+
+    <div id='time-line'>HISTORICO DE PUBLICAÇÕES ATUALIZADAS AQUI</div>
+
     <div id='menu-bottom'>
-  <button> <img src='assets/imagens/perfil.png' id='profile'> PERFIL </button>
-   <img src='assets/imagens/logo.png' id='feed-logo' alt='Logotipo QA- Qualidade de ações'>
-   <button> <img src='assets/imagens/publicar.png' alt='Imagem publicação' id='button-publish'> PUBLICAR </button>
-   </div>
-   <div id='menu-top'>
-   <button> <img src='assets/imagens/logout.png' alt='Imagem sair' id='button-logout'> SAIR </button>
-   <img id='bumerangue-gif-feed' src='assets/imagens/bumerangue.gif'>
-   </div>
+      <figure><img src='assets/imagens/perfil.png' id='profile'> PERFIL </figure>
+      <img src='assets/imagens/logo.png' id='feed-logo' alt='Logotipo QA- Qualidade de ações'>
+      <figure><img src='assets/imagens/publicar.png' alt='Imagem publicação' id='button-publish'> PUBLICAR </figure>
+    </div>
+     <button id='ok'>oooooooooooooooiii</button>
  </section>
  `;
 
   feedContainer.innerHTML = feedScreenMenu;
+
+  //const btnok = feedContainer.querySelector('#ok');
+
+  //btnok.addEventListener('click', showPosts());
+
 
   const showPosts = async () => {
     const posts = await getPosts();
@@ -60,7 +69,7 @@ export default () => {
       window.location.hash = '#publish';
     });
 
-    const buttonsDelete = feedContainer.querySelectorAll('.button-delete');
+    const buttonsDelete = feedContainer.querySelector('.button-delete');
     buttonsDelete.forEach((button) => {
       if (userUID() === button.dataset.userId) {
         button.style.display = 'block';

@@ -6,18 +6,19 @@ import {
 export default () => {
   const publishContainer = document.createElement('div');
   const publishScreen = `
-   <section id='publication'>
-    <img id='bumerangue-gif-publish' src='assets/imagens/bumerangue.gif'>
-    <textarea id='publication-text-publish' name='textarea' placeholder='Qual ação deseja compartilhar?'></textarea>
-    <div id='buttons-publication'>
-    <button id='cancel-button' type='button'> Cancelar </button>
-    <button id='publication-button-publish'> Publicar </button> <br> <br>
-    </div>
-    <p id='empty-post-message'> </p> 
-    <h2 id='reactions-title'> Entendendo as reações</h2>
-    <img id='reactions' src='assets/imagens/reacoes.gif'>
-    
-    </section>
+   <div id='publication'>
+         <figure><img id='bumerangue-gif-publish' src='assets/imagens/bumerangue.gif'></figure>
+         <textarea id='publication-text-publish' name='textarea' placeholder='Qual ação deseja compartilhar?'></textarea>
+   <div id='buttons-publication'>
+   <button id='cancel-button' type='button'> Cancelar </button>
+   <button id='publication-button-publish'>  Publicar </button> 
+   </div>
+   <div id='content-reactions'>
+   <p id='empty-post-message'> </p> 
+   <h2 id='reactions-title'> Entendendo as reações</h2>
+     <img id='reactions' src='assets/imagens/reacoes.gif'>
+   </div>
+   </div>
    `;
   publishContainer.innerHTML = publishScreen;
 
@@ -41,6 +42,7 @@ export default () => {
         const postId = localStorage.getItem('postId'); // isso significa que o usuário está editando um post existente.
         await editPost(postId, postText); // Então, a função editPost(postId, postText) é chamada.
       }
+      showPosts();
       window.location.hash = '#feed'; // Independentemente de o usuário estar criando um novo post ou editando um post existente, vamos redirecioná-lo para o feed após a ação ser concluída com sucesso.
     }
   });
