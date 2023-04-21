@@ -1,12 +1,13 @@
 import { createUser } from '../../firebase/auth.js';
 import { errorMessages, validateRegister } from '../../firebase/error.js';
+import LogotipoQA from '../../assets/imagens/logo.png';
 
 export default () => {
   const registerContainer = document.createElement('div');
 
   const registerScreen = `
   <section class='register-container-new'>
-  <figure> <img src='assets/imagens/logo.png' id='register-logo' alt='Logotipo QA- Qualidade de ações'> </figure> <br> <br>
+  <figure> <img src='${LogotipoQA}' alt='Logotipo QA- Qualidade de ações'> </figure> <br> <br>
   <h2 id='register-new'> Cadastre-se </h2>
     <form>
     <label class='registration-description' for='nome'> NOME COMPLETO </label>

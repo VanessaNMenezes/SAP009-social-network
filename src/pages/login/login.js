@@ -1,5 +1,7 @@
 import { userLogin, googleLogin } from '../../firebase/auth.js';
 import { errorMessages, validationLogin } from '../../firebase/error.js';
+import iconeBtnGoogle from '../../assets/imagens/google.png';
+import LogotipoQA from '../../assets/imagens/logo.png';
 
 export default () => {
   const loginContainer = document.createElement('div');
@@ -14,13 +16,13 @@ export default () => {
        </div>
       </section> 
       <section class='login-container'>
-      <figure> <img src='assets/imagens/logo.png' id='login-logo' alt='Logotipo QA- Qualidade de ações'> </figure>
+      <figure> <img src='${LogotipoQA}' alt='Logotipo QA- Qualidade de ações'> </figure>
       <input class='padding-inputs' id='email' name='email' type='email' placeholder='E-MAIL' required/> 
       <input class='padding-inputs' id='password' name='password' type='password' placeholder='SENHA' > 
       <button id='enter-button'> ENTRAR </button>
       <p id='error-login'> </p>
       <p id='or-google'>ou</p> 
-      <p id='login-google'>Faça login com sua conta </p><img src='assets/imagens/google.png' alt='Imagem google' id='image-google'> 
+      <p id='login-google'>Faça login com sua conta </p><img src='${iconeBtnGoogle}' alt='Imagem google' id='image-google'> 
       <p id='google-account'> Não tem uma conta? </p>
       <span id='register'> CADASTRE-SE </span>
       <br><br>
