@@ -101,8 +101,8 @@ opacity: 0.6;
   
     .register-container-new {
       position: absolute;
-      width: 90vh;
-      height: 90vh;
+      width: 90%;
+      height: 90%;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -112,23 +112,21 @@ opacity: 0.6;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      padding: 30px;
       }
-
- 
   
   #register-logo-new{
-    height: 30%;
-     
+    width: 25%;
   }
    
     #register-new { 
      display: flex; 
-    font-size: 45px;
+    font-size: 1.5rem;
     color: #FFFFFF;
     justify-content: center;
      padding: 6px;
-      width: 450px;
-      height: 50px;
+      width: 20rem;
+      height: 1.5rem;
       border-radius: 15px;
       background-color: #EE8100; 
       }
@@ -137,31 +135,27 @@ opacity: 0.6;
 display: flex;
 justify-content: space-between;
 flex-direction: column;
-margin-top: 40px;
+margin-top: 20px;
       }
 
   .registration-description {
     display: flex;
-    font-size: 25px;
-    }
-    
-    input {
-    font-size: 25px;
+    font-size: 1rem;
     }
     
     .registration-content {
     display: flex;
-    width: 450px;
-    height: 50px;
+    width: 26rem;
+    height: 2rem;
     background: #DADADA;
     border: 3px solid #000000;
     border-radius: 15px;
     }
     
     #register-new-button {
-    margin: 2rem;
+    margin: 0.5rem;
     width: 25rem;
-    height: 3.5rem;
+    height: 2.5rem;
     background: #DADADA;
     color: #EE8100;
     border: 3px solid #EE8100;
@@ -170,9 +164,8 @@ margin-top: 40px;
     text-align: center;
     cursor: pointer;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 15px;
-    padding: 10px;
     opacity: 0.6;
      
     }
@@ -184,26 +177,20 @@ margin-top: 40px;
     }
     
     #error-register {
-    font-size: 30px;
+    font-size: 16px;
+    }
+ 
+    #confirmation-message{
+    font-size: 16px;    
     }
 
     #google-account-register {
-    display: flex;   
-    font-size: 22px; 
-    margin-left: -70px;
-    margin-top: -15px;
-    padding: 10px;
-    }
-    
-    #confirmation-message{
-    font-size: 25px;    
-    }
-    
-    #account-register {
-    display: flex;
-    font-size: 25px;
-    margin-left: -95px;
-    }
+      display: flex;   
+      font-size: 16px; 
+      margin-left: -70px;
+      margin-top: -105px;
+      padding: 15px;
+      }
     
     #register-login-init {
     display: flex;
@@ -212,8 +199,8 @@ margin-top: 40px;
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: #EE8100;
-    margin-top: -50px;
-    font-size: 20px;
+    margin-top: -40px;
+    font-size: 16px;
     }
       
     footer {
@@ -221,5 +208,4 @@ margin-top: 40px;
     font-size: 12px;
     
     }
-    
   }

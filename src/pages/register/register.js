@@ -20,10 +20,9 @@ export default () => {
        <input type='password' class='registration-content' id='confirm-password' name='confirm-password' required>
     </form>
      <button id='register-new-button'>CRIAR CONTA</button> 
-       <p id='error-register'></p>
-       <p id='confirmation-message'> </p> 
+       <p id='error-register'></p><br><br><br><br>      
        <p id='google-account-register'>Já tem uma conta? </p>
-        <span id='register-login-init'>ACESSE AQUI </span><br><br>
+        <span id='register-login-init'>ACESSE AQUI </span><br><br><p id='confirmation-message'> </p> 
   <footer> <strong> © BOOMERANG </strong> </footer>
   </section
   `;

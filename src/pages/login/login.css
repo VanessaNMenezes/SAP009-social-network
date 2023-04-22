@@ -1,6 +1,8 @@
   #desktop {
   display: flex;   
   flex-direction: column;
+  width: 90%;
+  height: 90%;
   }
 
   #login-content-desktop {
@@ -113,50 +115,54 @@ padding: 15px;
   display: flex;
   flex-direction: column;
   margin: 0;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 }
 
   #login-content-desktop {
   margin-left: 0;
   display: flex;   
   background-color: #EE8100;   
-  width: 60%;
+  width: 55%;
   height: 100%;
  flex-direction: column;
  justify-content: space-between;
  gap: 30px;
- padding: 10px;
+ 
   }
 
   #background-orange {
+    display: flex;
+    flex-direction: column;
    margin-top: 1px;
-   height: 100%;
+   height: auto;
   padding: 2px;
+  width: auto;
   }
   
   #welcome {
-  margin-top: 100px;  
+  margin-top: 70px;  
   text-align: center;
   font-size: 60px;
   color: #FFFFFF;
-  padding: -30px;
+  padding: 30px;
   }
   
   #line {
-  width: 650px;
+  width: 80%;
   margin-left: 55px;
   }
   
   #quality {
-  margin-top: 80px;
-  font-size: 40px; 
+  margin-top: -20px;
+  font-size: 38px; 
   text-align: center;
+  padding: 30px;
   }
   
   #actions {
-  margin-top: 250px;
-  font-size: 40px; 
+  margin-top: 310px;
+  font-size: 38px; 
   text-align: center;
   color: #FFFFFF;
   }
@@ -165,7 +171,7 @@ padding: 15px;
   display: flex;
   width: 30%;
   margin-left: 900px;
-  height: 100%;
+  height: 95%;
   padding: 2px;
   } 
   /*modificações*/
@@ -208,7 +214,7 @@ padding: 15px;
     font-size: 20px;
     color: #EE8100;
     margin-left: 260px;
-    margin-top: -90px;
+    margin-top: -70px;
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: #EE8100;

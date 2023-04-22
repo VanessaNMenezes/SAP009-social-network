@@ -10,7 +10,7 @@ import {
 import { app } from './app.js';
 
 export const auth = getAuth(app);
-/*// função que autentica a usuária e armazena nome
+/* // função que autentica a usuária e armazena nome
 export async function criarCadastro(email, senha, displayName) {
   const autenticacao = getAuth(app);
   await createUserWithEmailAndPassword(email, senha);
@@ -30,7 +30,7 @@ export const obterUsuaria = async () => {
     nomeUsuaria: autenticacao.currentUser.displayName,
   };
   return usuaria;
-};*/
+}; */
 
 // Retornará o nome do usuário atualmente autenticado no firebase:
 export const nameUser = () => auth.currentUser.displayName;

@@ -9,10 +9,10 @@ export default () => {
   const loginScreen = `
   <section id='desktop'> 
     <section id='login-content-desktop'>
-      <div id='background-orange'> <br> <br>
-        <h2 id='welcome'> Bem vindo (a) ! <br> <br> </h2> <hr id='line'> <br> <br> <br> <br>
-           <p id='quality'> "A sua qualidade de vida é como um <span>bumerangue</span>, precisa ter movimento. <br> Todas as ações que você lançar, <br> voltarão em sua direção ainda mais fortes." </p> <br> <br>
-      <h2 id='actions'> Melhore suas ações, <br> pratique atividade física! </h2><br><br><br><br><br><br>
+      <div id='background-orange'> 
+        <h2 id='welcome'> Bem vindo (a) ! </h2> <hr id='line'>  
+           <p id='quality'> "A sua qualidade de vida é como um <span>bumerangue</span>, precisa ter movimento.  Todas as ações que você lançar,  voltarão em sua direção ainda mais fortes." </p> 
+      <h2 id='actions'> Melhore suas ações, pratique atividade física! </h2><br>
        </div>
       </section> 
       <section class='login-container'>
@@ -23,7 +23,7 @@ export default () => {
       <p id='error-login'> </p><br>
       <p id='or-google'>ou</p> <br>
       <figure>
-      <p id='login-google'>Faça login com sua conta </p><img src='${iconeBtnGoogle}' alt='Imagem google' id='image-google'> </figure><br>
+      <p id='login-google'>Faça login com sua conta </p><img src='${iconeBtnGoogle}' alt='Imagem google' id='image-google'> </figure>
       <p id='google-account-login'> Não tem uma conta? </p>
       <span id='login-register'>CADASTRE-SE </span>
       <footer> <strong> © BOOMERANG </strong> </footer>
