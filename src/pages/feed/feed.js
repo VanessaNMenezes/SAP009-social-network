@@ -23,7 +23,8 @@ export default () => {
         </figure>
         <img id='bumerangue-gif-feed' src='${iconeBtnBumerangue}'>
     </div>
-    <div id='time-line'> </div>
+    <div id='time-line'>
+    </div>
     <div id='menu-bottom'>
       <figure id='profile'>
       <img src='${iconeBtnProfile}'> PERFIL 
@@ -42,14 +43,13 @@ export default () => {
   const showPosts = async () => {
     const posts = await getPosts();
     const postTemplate = posts.map((post) => `
-    <div>
     <div class='main-post-feed'>
     <div class='name-post'> ${post.userName} </div> 
     <div class='date-post'>${post.publishDate} </div> 
     <div class='content-post'> ${post.text} </div> 
     </div>
   <div class='likes-posts'>
-  <figure class='button-like-post' data-post-id=${post.id}> 💛 ${post.like.length}
+  <figure class='button-like-post' data-post-id=${post.id}> 💛${post.like.length}
   </figure>
   <figure class='button-equal-activity' data-post-id=${post.id}> 🤝 
   </figure>
@@ -64,14 +64,13 @@ export default () => {
   </div>
   <div class='edit-delete-post-feed'>
   <figure class='button-edit' data-post-id=${post.id} data-user-id=${post.userId}> 
-  ✏️
-  </figure>
+  ✏️</figure>
   <figure class='button-delete' data-post-id=${post.id} data-user-id=${post.userId}>
   🗑️
   </figure>
 </div> 
 </div>
-</div>
+
 `);
 
     feedContainer.querySelector('#time-line').innerHTML = postTemplate;

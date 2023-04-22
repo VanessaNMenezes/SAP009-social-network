@@ -40,7 +40,7 @@ export default () => {
     if (postText === '') {
       emptyPostMessage.innerHTML = '⚠️ POST VAZIO! Por favor, digite algo!';
     } else {
-      if (localStorage.getItem('editStatus') === 'true') { // verifica se o valor da chave "editStatus" no armazenamento local é igual a "false", se for, significa que o usuário está criando um novo post.
+      if (localStorage.getItem('editStatus') !== 'true') { // verifica se o valor da chave "editStatus" no armazenamento local é igual a "false", se for, significa que o usuário está criando um novo post.
         await newPost(postText); // E a função newPost(postText) é chamada.
       } else { // SE NÃO, se o valor da chave "editStatus" for diferente de "false":
         const postId = localStorage.getItem('postId'); // isso significa que o usuário está editando um post existente.
