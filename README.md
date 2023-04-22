@@ -1,8 +1,8 @@
-## <div align="center"> 💻 📱 CRIANDO UMA REDE SOCIAL 📱 💻 </div>
+#### <div align="center"> 💻 📱 CRIANDO UMA REDE SOCIAL 📱 💻 </div>
 
-# <div align="center"> 🪃 QA: Qualidade de Ações - Incentivando a prática de atividade física 🧡🏀 </div>
+## <div align="center"> 🪃 QA: Qualidade de Ações -  Incentivando a prática de atividade física 🧡</div>
 
-<div align="center"> <img src= "src/assets/imagens/logo.png" width ="600px" height = "400px"/>
+<div align="center"> <img src= "src/assets/imagens/logo.png" width ="500px" height = "250px"/>
 
 _"A sua **qualidade de vida** é como um bumerangue, precisa ter **movimento**. Todas as **ações** que você lançar, **voltarão** em sua direção ainda mais fortes."_ 
 
@@ -22,7 +22,7 @@ Neste projeto, construímos uma Rede Social sobre melhoria da qualidade de vida,
 ## DEFINIÇÃO DO PRODUTO
 
 * Objetivo principal
-• Proporcionar a melhoria da qualidade de vida, através do aumento de bem-estar físico.
+* • Proporcionar a melhoria da qualidade de vida, através do aumento de bem-estar físico.
 
 * Objetivos secundários:
 • Despertar para a importância da ação, do movimento.
@@ -49,7 +49,7 @@ somente após o usuário ter realizado o aprimoramento na qualidade de suas aç�
 publicações de outros usuários.
 
 **De que forma poderá ser feito?**
-O usuário poderá realizar publicações sobre a ação que realizou naquele dia:
+O usuário poderá realizar publicações sobre a ação que realizou naquele dia: 
 • Qual foi a atividade física.
 • As características da atividade (local, duração, intensidade).
 • Quais melhorias a prática trouxe para seu bem-estar físico.
@@ -97,8 +97,8 @@ baseadas atráves de protótipos de baixa e alta fidelidades, ambos construídos
 Nesta interface, aplicamos o conceito de Mobile-first. Definimos qual seria o fluxo 
 que o usuário seguiria dentro da nossa rede e, com isso, criamos a interface do usuário (UI), que seguisse este fluxo. Desenhamos a ideia do posicionamento de cada elemento nas páginas, uma a uma, de maneira simples, com baixo grau de detalhamento, e os identificamos.
 
-<img src= "src/assets/imgs-readme/prototipo-baixa1.png" width = "750px" height = "500px"/> 
-<img src= "src/assets/imgs-readme/prototipo-baixa2.png" width = "750px" height = "500px"/> 
+<img src= "src/assets/imgs-readme/prototipo-baixa1.png" width = "750px" height = "700px"/> 
+<img src= "src/assets/imgs-readme/prototipo-baixa2.png" width = "750px" height = "700px"/> 
 
 
 ## PROTÓTIPO DE ALTA FIDELIDADE MOBILE:
@@ -108,8 +108,8 @@ o posicionamento de cada elemento, pigmentamos com a palheta de cores escolhida,
 desenhamos com alto grau de detalhamento, apresentamos visualmente a funcionalidade
 e reproduzimos fielmente o produto final em termos de design.
 
-<img src= "src/assets/imgs-readme/prototipo-alta1.png" width = "750px" height = "500px"/> 
-<img src= "src/assets/imgs-readme/prototipo-alta2.png" width = "750px" height = "500px"/> 
+<img src= "src/assets/imgs-readme/prototipo-alta1.png" width = "750px" height = "700px"/> 
+<img src= "src/assets/imgs-readme/prototipo-alta2.png" width = "750px" height = "700px"/> 
 
 
 ## PROTÓTIPO DE ALTA FIDELIDADE DESKTOP:
@@ -136,7 +136,7 @@ Através dos resultados obtidos, iteramos nossos desenhos de interface, aplicand
 
 ***
 
-## E quais objetivos foram alcançados neste projeto?
+## E quais objetivos foram alcançados neste projeto? 
 
 (🪃) Ser uma SPA.
 (🪃) Ser _responsivo_.
@@ -180,8 +180,6 @@ melhorias.
 
 ***
 
-### ESTE PROJETO FOI CRIADO E DESENVOLVIDO POR:
-
-### 🪃 [THALITA NASCIMENTO](https://github.com/THALINascimento) & [VANESSA MENEZES](https://github.com/VanessaNMenezes) 🧡
+####  🪃 ESTE PROJETO FOI CRIADO E DESENVOLVIDO POR: [THALITA NASCIMENTO](https://github.com/THALINascimento) & [VANESSA MENEZES](https://github.com/VanessaNMenezes) 🧡
 
 ***
