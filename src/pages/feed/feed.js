@@ -18,8 +18,7 @@ export default () => {
         </figure>
         <img id='bumerangue-gif-feed' src='assets/imagens/bumerangue.gif'>
     </div>
-    <div id='time-line'> 
-    </div>
+    <div id='time-line'> </div>
     <div id='menu-bottom'>
       <figure id='profile'>
       <img src='assets/imagens/perfil.png'> PERFIL 
@@ -40,6 +39,7 @@ export default () => {
     const postTemplate = posts.map((post) => `
     <div>
     <div class='main-post-feed'>
+    <div class='name-post'> ${post.userName} </div> 
     <div class='date-post'>${post.publishDate} </div> 
     <div class='content-post'> ${post.text} </div> 
     </div>
@@ -58,9 +58,11 @@ export default () => {
   </figure>
   </div>
   <div class='edit-delete-post-feed'>
-  <figure class='button-edit' data-post-id=${post.id} data-user-id=${post.userId}> ✏️
+  <figure class='button-edit' data-post-id=${post.id} data-user-id=${post.userId}> 
+  ✏️
   </figure>
-  <figure class='button-delete' data-post-id=${post.id} data-user-id=${post.userId}> 🗑️
+  <figure class='button-delete' data-post-id=${post.id} data-user-id=${post.userId}>
+  🗑️
   </figure>
 </div> 
 </div>

@@ -30,6 +30,7 @@ export const getPosts = async () => {
   // Essa função busca posts em uma coleção no banco de dados do firestore.
   // Ordena por data em ordem decrescente.
   // Adiciona um identificador único para cada post e retorna uma lista de posts.
+
 // Criar novo post:
 export async function newPost(postText) {
   await addDoc(collection(db, 'posts'), {
@@ -40,7 +41,7 @@ export async function newPost(postText) {
     like: [],
   });
 }
-// esse Date seu era para estar de outra cor
+
 // Buscar os dados de um post específico no banco de dados Firestore:
 export async function getPost(postId) {
   const querySnapshot = await getDoc(doc(db, 'posts', postId));
@@ -51,11 +52,12 @@ export async function getPost(postId) {
 }
 
 // Editar post:
-export const editPost = (postId, textEdit) => {
-  updateDoc(doc(db, 'posts', postId), {
+export async function editPost(postId, textEdit) {
+  const postdoc = doc(db, 'posts', postId);
+  await updateDoc(postdoc, {
     text: textEdit,
   });
-};
+}
 
 // Excluir post:
 export async function deletePost(postId) {
@@ -71,7 +73,7 @@ export async function likePost(postId) {
     await updateDoc(doc(db, 'posts', postId), {
       like: arrayUnion(auth.currentUser.uid),
     });
-  } else {
+  } else { // descurtir post:
     await updateDoc(doc(db, 'posts', postId), {
       like: arrayRemove(auth.currentUser.uid),
     });

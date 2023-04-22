@@ -1,4 +1,5 @@
 import {
+  auth,
   addDoc,
   collection,
   doc,
@@ -8,6 +9,7 @@ import {
   orderBy,
   updateDoc,
   arrayUnion,
+  arrayRemove,
   deleteDoc,
 } from 'firebase/firestore';
 
@@ -126,7 +128,8 @@ describe('editPost', () => {
 
 describe('likePost', () => {
   it('must add the username to the list of likes', async () => {
-    updateDoc.mockResolvedValue(); // criando valores falsos para a função likePost
+    // criando valores falsos para a função likePost
+    updateDoc.mockResolvedValue();
     const mockDoc = 'doc';
     doc.mockReturnValueOnce(mockDoc);
     const mockUnion = 'union';
@@ -138,12 +141,67 @@ describe('likePost', () => {
       like: mockUnion,
     };
     await likePost(postId);
+
     expect(doc).toHaveBeenCalledTimes(1); // verifica se a função foi chamada exatamente uma vez
     expect(doc).toHaveBeenCalledWith(db, 'posts', postId); // verifica se foi chamada com os parâmetros esperados.
     expect(updateDoc).toHaveBeenCalledTimes(1);
     expect(updateDoc).toHaveBeenCalledWith(mockDoc, updatedPost);
   });
+
+  it('must remove the username from the list of likes if the user has already liked the post', async () => {
+    // criando valores falsos para a função likePost
+    updateDoc.mockResolvedValue();
+    const mockDoc = 'doc';
+    doc.mockReturnValueOnce(mockDoc);
+    const mockRemove = 'remove';
+    arrayRemove.mockReturnValueOnce(mockRemove);
+
+    // criando valores de entrada:
+    const postId = 'id-post'; // ID de post fictício
+    const post = {
+      like: [auth.currentUser.uid],
+    };
+    const updatedPost = {
+      like: mockRemove,
+    };
+    getPost.mockResolvedValueOnce(post);
+
+    await likePost(postId);
+
+    expect(getPost).toHaveBeenCalledTimes(1); // verifica se a função foi chamada exatamente uma vez
+    expect(getPost).toHaveBeenCalledWith(postId); // verifica se foi chamada os parâmetros esperados
+    expect(doc).toHaveBeenCalledTimes(2); // verifica se a função foi chamada exatamente duas vezes
+    expect(doc).toHaveBeenNthCalledWith(1, db, 'posts', postId); // verifica se foi chamada com os parâmetros esperados.
+    expect(doc).toHaveBeenNthCalledWith(2, db, 'posts', postId); // verifica se foi chamada com os parâmetros esperados.
+    expect(updateDoc).toHaveBeenCalledTimes(1);
+    expect(updateDoc).toHaveBeenCalledWith(mockDoc, updatedPost);
+
+    const updatedLikeList = await likePost(postId);
+    expect(updatedLikeList).toEqual([]);
+  });
 });
+
+// describe('likePost', () => {
+//   it('must add the username to the list of likes', async () => {
+//     updateDoc.mockResolvedValue(); // criando valores falsos para a função likePost
+//     const mockDoc = 'doc';
+//     doc.mockReturnValueOnce(mockDoc);
+//     const mockUnion = 'union';
+//     arrayUnion.mockReturnValueOnce(mockUnion);
+
+//     // criando valores de entrada:
+//     const postId = 'id-post'; // ID de post fictício
+//     const updatedPost = {
+//       like: mockUnion,
+//     };
+//     await likePost(postId);
+//     expect(doc).toHaveBeenCalledTimes(1); // verifica se a função foi chamada exatamente uma vez
+// eslint-disable-next-line max-len
+//     expect(doc).toHaveBeenCalledWith(db, 'posts', postId); // verifica se foi chamada com os parâmetros esperados.
+//     expect(updateDoc).toHaveBeenCalledTimes(1);
+//     expect(updateDoc).toHaveBeenCalledWith(mockDoc, updatedPost);
+//   });
+// });
 
 describe('deletePost', () => {
   it('must delete the specified post', async () => {

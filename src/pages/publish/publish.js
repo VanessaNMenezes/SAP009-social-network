@@ -4,22 +4,20 @@ import {
 } from '../../firebase/firestore.js';
 
 export default () => {
-  localStorage.setItem('editStatus', false);
   const publishContainer = document.createElement('div');
   const publishScreen = `
   <div id='publication'>
   <div id='content-pub'>
-     <figure> <img id='bumerangue-gif-publish' src='assets/imagens/bumerangue.gif'>
-     </figure>
+     <figure><img id='bumerangue-gif-publish' src='assets/imagens/bumerangue.gif'></figure>
      <textarea id='publication-text-publish' name='textarea' placeholder='Qual ação deseja compartilhar?'></textarea>
    </div>
 <div id='buttons-publication'>
 <button id='cancel-button' type='button'> Cancelar </button>
-<button id='publication-button-publish'> <strong> Publicar </strong> </button>
+<button id='publication-button-publish'>  Publicar </button>
 </div>
 <p id='empty-post-message'> </p>
 <div id='content-reactions'>
-<h2 id='reactions-title'> Entendendo as reações </h2>
+<h2 id='reactions-title'> Entendendo as reações</h2>
  <img id='reactions' src='assets/imagens/reacoes.gif'>
 </div>
 </div>
