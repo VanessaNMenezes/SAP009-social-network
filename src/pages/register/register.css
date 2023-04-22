@@ -10,13 +10,13 @@
   padding: 1rem;
 }
 
+#register-logo-new {
+  width: 50%;
+}
+
 #register-new {
   display: none;
   }
-
-#register-logo-new {
-width: 80%;
-}
 
 #register-new-form{
 display: flex;
@@ -114,10 +114,12 @@ opacity: 0.6;
       transform: translate(-50%, -50%);
       }
 
-      #register-logo-new {
-        width: 58%;
-        }
+ 
   
+  #register-logo-new{
+    height: 30%;
+     
+  }
    
     #register-new { 
      display: flex; 

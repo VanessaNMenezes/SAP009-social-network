@@ -12,7 +12,7 @@ export default () => {
       <div id='background-orange'> <br> <br>
         <h2 id='welcome'> Bem vindo (a) ! <br> <br> </h2> <hr id='line'> <br> <br> <br> <br>
            <p id='quality'> "A sua qualidade de vida é como um <span>bumerangue</span>, precisa ter movimento. <br> Todas as ações que você lançar, <br> voltarão em sua direção ainda mais fortes." </p> <br> <br>
-      <h2 id='actions'> Melhore suas ações, <br> pratique atividade física! </h2>
+      <h2 id='actions'> Melhore suas ações, <br> pratique atividade física! </h2><br><br><br><br><br><br>
        </div>
       </section> 
       <section class='login-container'>
@@ -26,8 +26,7 @@ export default () => {
       <p id='login-google'>Faça login com sua conta </p><img src='${iconeBtnGoogle}' alt='Imagem google' id='image-google'> </figure><br>
       <p id='google-account-login'> Não tem uma conta? </p>
       <span id='login-register'>CADASTRE-SE </span>
-      <br><br>
-    <footer> <strong> © BOOMERANG </strong> </footer>
+      <footer> <strong> © BOOMERANG </strong> </footer>
     </section>
     </section>
   `;

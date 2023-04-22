@@ -2,19 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
-  margin: 0 auto;
+  margin: -10px auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 90%;
+  height: 80%;
   }
   
   #content-pub {
   display: block;
   flex-direction: row;
   justify-content: flex-start;
+  padding: 10px;
   }
     
   #bumerangue-gif-publish {
@@ -28,21 +32,22 @@
     
   #publication-text-publish {
   display: flex;
-  width: 330px;
-  height: 250px;
+  width: 20rem;
+  height: 14rem;
   background: #FFFFFF;
   border: 2px solid #000000;
   border-radius: 20px;
-  font-size: 30px;
+  font-size: 3rem;
   text-align: center;
   justify-content: center;
+  font-size: 3rem;
   }
     
   #buttons-publication {
   display: flex;
   cursor: pointer; 
   margin-top: 10px;
-  gap: 100px;
+  gap: 90px;
   }
     
   #cancel-button {
@@ -52,7 +57,7 @@
   border: 1px solid #000000;
   border-radius: 10px;
   text-align: center;
-  font-size: 25px;
+  font-size: 2rem;
   padding: 10px;
   }
     
@@ -63,7 +68,7 @@
   border-radius: 10px;
   border-color:#EE8100;
   text-align: center;
-  font-size: 25px;
+  font-size: 2rem;
   padding: 10px;
   color: #FFFFFF;
   }
@@ -90,23 +95,33 @@
   #reactions {
   display: flex;
   border-radius: 40px;
-  width: 320px;
-  height: 280px;
+  width: 20rem;
+  height: 20rem;
   margin-top: 10%;
   }
   
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 760px) {
   
   #bumerangue-gif-publish {
   margin-left:  420px
   }    
   
   #publication-text-publish {
-  width: 530px;
-  height: 350px;
+  width: 35rem;
+  height: 20rem;
   }    
   
   #buttons-publication {
   gap: 300px;
   }
+
+  #publication {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ 
+    }
+
   } 

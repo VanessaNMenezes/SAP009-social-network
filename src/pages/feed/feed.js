@@ -18,10 +18,10 @@ export default () => {
   const feedScreenMenu = `
  <section class='register-container-feed'>
     <div id='menu-top'>
-        <figure id='button-logout-sair'>
-        <img src='${iconeBtnLogout}' alt='Imagem sair'>  
-        </figure>
-        <img id='bumerangue-gif-feed' src='${iconeBtnBumerangue}'>
+    <div id='button-sair-feed'>
+        <img id='button-logout-sair-img' src='${iconeBtnLogout}' alt='Imagem sair'>  
+        </div> 
+        <img id='bumerangue-gif-feed' src='${iconeBtnBumerangue}'> 
     </div>
     <div id='time-line'>
     </div>
@@ -44,7 +44,7 @@ export default () => {
     const posts = await getPosts();
     const postTemplate = posts.map((post) => `
     <div class='main-post-feed'>
-    <div class='date-post'>${post.publishDate} </div> 
+      <div class='date-post'>${post.publishDate} </div> 
     <div class='content-post'> ${post.text} </div> 
     </div>
   <div class='likes-posts'>
@@ -169,7 +169,7 @@ export default () => {
       });
     });
   };
-  const buttonLogout = feedContainer.querySelector('#button-logout-sair');
+  const buttonLogout = feedContainer.querySelector('#button-sair-feed');
   buttonLogout.addEventListener('click', (event) => {
     event.preventDefault();
     logOut();
