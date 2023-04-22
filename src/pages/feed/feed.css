@@ -1,11 +1,3 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  box-sizing: border-box;
-}
-
 .register-container-feed {
   width: 100%;
   max-width: 600px;
@@ -16,6 +8,10 @@ body {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #menu-top {
@@ -25,6 +21,13 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+
+#bumerangue-gif-feed {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  padding-top: 0px;
+  }
 
 #time-line {
   width: 100%;
@@ -41,13 +44,6 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
-
-  #bumerangue-gif-feed {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    padding-top: 0px;
-    }
   
   #button-publish,
   #profile,
@@ -73,18 +69,18 @@ body {
     margin-left: -30px;
   }
 
+  .date-post {
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
   .content-post {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     padding: 10px;
-  }
-  
-  .date-post {
-    font-size: 14px;
-    text-align: right;
-    margin-bottom: 10px;
   }
   
   .likes-posts {
