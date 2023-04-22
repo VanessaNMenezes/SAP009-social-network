@@ -8,8 +8,7 @@ _"A sua **qualidade de vida** é como um bumerangue, precisa ter **movimento**. 
 
  _Melhore suas ações, pratique atividade física!_
 
-### Acesse o projeto completo [CLICANDO AQUI](https://social-network-qa-1f7b1.web.app/) 
-</div>
+### Acesse o projeto completo [CLICANDO AQUI](https://THALINascimento.github.io/SAP009-social-network/) </div>
 
 ***
 

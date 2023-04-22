@@ -1,10 +1,25 @@
-  #login-content-desktop {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 0vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#login-content-desktop {
   display: none; 
   }
   
-  #desktop {
-  display: flex;   
-  flex-direction: column;
+  #register {
+  display: flex; 
+  color: #EE8100;
+  margin-left: 210px;
+  margin-top: -67px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #EE8100;
   }
   
   .login-container { 
@@ -32,23 +47,34 @@
   height: 50px;
   background: #DADADA;
   border: 3px solid #000000;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
   font-size: 25px;
   }
     
+    /*#email {
+    margin-top: 80px;  
+    background-image: url('/src/imagens/email.png') !important;;
+    background-repeat: no-repeat;
+    }
+    
+    #password {
+    background-image: url('/src/imagens/cadeado.png') !important;;
+    background-repeat: no-repeat;
+    }*/
+    
   #enter-button {
   width: 350px;
-  height: 55px;
-  background: #DADADA;
+  height: 50px;
+  background:  #DADADA;
   color: #EE8100;
-  border-radius: 15px;
+  border-radius: 30px;
   border: 3px solid #EE8100;
   cursor: pointer;
   align-items: center;
   text-align: center;
   font-size: 25px;
-  padding: 10px;
+  padding: 10px ;
   }
   
   #enter-button:hover {
@@ -62,56 +88,51 @@
   padding: 2px;
   }
   
-  #or-google {
-  font-size: 20px;
-  margin-top: -2px;
+  #or-google{
+  font-size: 18px;
+  margin-top: -5px;
   }
   
   #login-google {
   display: flex;   
   font-size: 22px; 
-  margin-left: -10px;
+  margin-left: -70px;
   padding: 30px;
   }
     
   #image-google {
   display: flex;  
-  width: 90px;
-  margin-top: -85px;
-  margin-left: 20px;
+  width: 80px;
+  margin-top: -90px;
+  margin-left: 250px;
   cursor: pointer;
   }
   
-  #account {
+  #google-account {
   display: flex;   
   font-size: 20px; 
   margin-left: -70px;
   margin-top: -35px;
   padding: 10px;
   }
-
-  #register {
-  display: flex; 
-  color: #EE8100;
-  margin-left: 210px;
-  margin-top: -50px;
-  cursor: pointer;
-  text-decoration: underline;
-  text-decoration-color: #EE8100;
+  
+  @media (min-width: 800px) {
+  
+  #desktop {
+  display: flex;   
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
   }
-
-  @media screen and (min-width: 1024px) {
   
   #login-content-desktop {
-  margin-left: 0;
   display: flex;   
   background-color: #EE8100; 
   width: 750px;
-  height: 950px;
+  height: 900px;
   }
   
   #welcome {
-  margin-top: 100px;  
   text-align: center;
   font-size: 60px;
   color: #FFFFFF;
@@ -123,13 +144,11 @@
   }
   
   #quality {
-  margin-top: 50px;
   font-size: 40px; 
   text-align: center;
   }
   
   #actions {
-  margin-top: 100px;
   font-size: 40px; 
   text-align: center;
   color: #FFFFFF;

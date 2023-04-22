@@ -1,5 +1,14 @@
-#orange-register-new, #register-new {
+
+#register-content-desktop {
 display: none;
+}
+
+#register-new {
+display: none;
+}
+
+input {
+font-size: 25px;
 }
 
 .register-container-new {
@@ -12,9 +21,6 @@ flex-wrap: wrap;
 justify-content: space-evenly;
 text-align: center;
 align-items: center;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
 }
 
 #register-logo {
@@ -25,11 +31,7 @@ margin-top: 10px;
 
 .registration-description {
 display: flex;
-font-size: 25px;
-}
-
-input {
-font-size: 25px;
+font-size: 18px;
 }
 
 .registration-content {
@@ -43,20 +45,21 @@ border-radius: 15px;
 
 #register-button {
 width: 200px;
-height: 55px;
+height: 50px;
 background: #DADADA;
 color: #EE8100;
 border: 3px solid #EE8100;
-border-radius: 15px;
+border-radius: 40px;
 text-decoration: none;
 text-align: center;
 cursor: pointer;
 align-items: center;
-font-size: 25px;
+font-size: 20px;
 margin-left: 15px;
 padding: 10px;
 opacity: 0.6;
 }
+
 
 #register-button:hover {
 background: #EE8100;
@@ -64,18 +67,10 @@ color: #FFFFFF;
 opacity: 2.8;
 }
 
-#error-register {
-font-size: 30px;
-}
-
-#confirmation-message{
-font-size: 25px;    
-}
-
-#account-register {
+#google-account-register {
 display: flex;
-font-size: 25px;
-margin-left: -95px;
+font-size: 20px;
+margin-left: -70px;
 }
 
 #register-login-init {
@@ -85,8 +80,7 @@ margin-left: 220px;
 cursor: pointer;
 text-decoration: underline;
 text-decoration-color: #EE8100;
-margin-top: -35px;
-font-size: 20px;
+margin-top: -33px;
 }
   
 footer {
@@ -94,29 +88,6 @@ display: flex;
 font-size: 12px;
 }
 
-@media screen and (min-width: 1024px) {
-
-#register-logo{
-display: flex;   
-width: 25%;
-margin-left: 1100px;
-margin-top: 10px;    
-}
-
-#orange-register-new {
-position: absolute;
-width: 500px;
-height: 65px;
-margin-left: 150px;
-margin-bottom: 780px;
-border-radius: 15px;
-background-color: #EE8100; 
-}
-
-#register-new { 
- display: flex; 
-font-size: 45px;
-color: #FFFFFF;
-justify-content: center;
-}
+#error-message {
+font-size: 30px;
 }
