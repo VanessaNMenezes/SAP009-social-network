@@ -16,15 +16,16 @@ export default () => {
        </div>
       </section> 
       <section class='login-container'>
-      <figure> <img src='${LogotipoQA}' alt='Logotipo QA- Qualidade de ações'> </figure>
+      <img src='${LogotipoQA}' id='login-logo' alt='Logotipo QA- Qualidade de ações'>
       <input class='padding-inputs' id='email' name='email' type='email' placeholder='E-MAIL' required/> 
       <input class='padding-inputs' id='password' name='password' type='password' placeholder='SENHA' > 
       <button id='enter-button'> ENTRAR </button>
-      <p id='error-login'> </p>
-      <p id='or-google'>ou</p> 
-      <p id='login-google'>Faça login com sua conta </p><img src='${iconeBtnGoogle}' alt='Imagem google' id='image-google'> 
-      <p id='google-account'> Não tem uma conta? </p>
-      <span id='register'> CADASTRE-SE </span>
+      <p id='error-login'> </p><br>
+      <p id='or-google'>ou</p> <br>
+      <figure>
+      <p id='login-google'>Faça login com sua conta </p><img src='${iconeBtnGoogle}' alt='Imagem google' id='image-google'> </figure><br>
+      <p id='google-account-login'> Não tem uma conta? </p>
+      <span id='login-register'>CADASTRE-SE </span>
       <br><br>
     <footer> <strong> © BOOMERANG </strong> </footer>
     </section>
@@ -37,7 +38,7 @@ export default () => {
   const inputEmail = loginContainer.querySelector('#email');
   const inputPassword = loginContainer.querySelector('#password');
   const errorMessage = loginContainer.querySelector('#error-login');
-  const signUp = loginContainer.querySelector('#register');
+  const signUp = loginContainer.querySelector('#login-register');
 
   buttonEnter.addEventListener('click', (event) => {
     event.preventDefault();

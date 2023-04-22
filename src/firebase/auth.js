@@ -10,6 +10,27 @@ import {
 import { app } from './app.js';
 
 export const auth = getAuth(app);
+/*// função que autentica a usuária e armazena nome
+export async function criarCadastro(email, senha, displayName) {
+  const autenticacao = getAuth(app);
+  await createUserWithEmailAndPassword(email, senha);
+  // console.log(displayName);
+  await updateProfile(autenticacao, {
+    displayName,
+  });
+}
+
+// obtendo usuária logada p/ exibir o nome dela
+export const obterUsuaria = async () => {
+  const autenticacao = getAuth();
+  const usuaria = {
+    uid: autenticacao.currentUser.uid,
+    displayName: autenticacao.currentUser.displayName,
+    email: autenticacao.currentUser.email,
+    nomeUsuaria: autenticacao.currentUser.displayName,
+  };
+  return usuaria;
+};*/
 
 // Retornará o nome do usuário atualmente autenticado no firebase:
 export const nameUser = () => auth.currentUser.displayName;

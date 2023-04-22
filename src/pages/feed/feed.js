@@ -44,12 +44,11 @@ export default () => {
     const posts = await getPosts();
     const postTemplate = posts.map((post) => `
     <div class='main-post-feed'>
-    <div class='name-post'> ${post.userName} </div> 
     <div class='date-post'>${post.publishDate} </div> 
     <div class='content-post'> ${post.text} </div> 
     </div>
   <div class='likes-posts'>
-  <figure class='button-like-post' data-post-id=${post.id}> 💛${post.like.length}
+  <figure class='button-like-post' data-post-id=${post.id}> 💛
   </figure>
   <figure class='button-equal-activity' data-post-id=${post.id}> 🤝 
   </figure>
