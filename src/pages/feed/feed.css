@@ -44,25 +44,25 @@
   width: 100%;
   box-sizing: border-box;
 }
-  
+ 
   #button-publish,
   #profile,
-  #button-logout-sair-img {
+  #button-logout-sair {
     display: flex;
     align-items: center;
     font-weight: bold;
     cursor: pointer;
   }
-  
+ 
   #button-publish img,
   #profile img,
-  
+  #button-logout-sair img,
   #feed-logo {
     height: 30px;
     margin-right: 10px;
   }
 
-  #button-logout-sair-img {
+  #button-logout-sair img {
     width: 100px;
     height: 100px;
     font-size: 10px;
@@ -74,7 +74,7 @@
     text-align: right;
     margin-bottom: 10px;
   }
-  
+ 
   .content-post {
     background-color: #fff;
     border-radius: 10px;
@@ -82,31 +82,31 @@
     box-sizing: border-box;
     padding: 10px;
   }
-  
+ 
   .likes-posts {
     display: flex;
     align-items: center;
     margin-top: 10px;
     gap: 2px;
   }
-  
+ 
   .likes-posts figure {
     margin: 0;
     margin-right: 10px;
   }
-  
+ 
   .edit-delete-post-feed {
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
     align-items: center;
   }
-  
+ 
   .edit-delete-post-feed figure {
     margin: 0;
     margin-left: 10px;
   }
-  
+ 
   .button-like-post,
   .button-equal-activity,
   .button-physical-benefits,
@@ -120,7 +120,7 @@
     cursor: pointer;
     margin-right: 10px;
   }
-  
+ 
   .button-edit,
   .button-delete {
     display: flex;
@@ -129,79 +129,4 @@
     font-weight: bold;
     cursor: pointer;
     margin-right: 10px;
-  }
-
-   @media screen and (min-width: 1024px) {
-    .register-container-feed {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      box-sizing: border-box;
-      position: absolute;
- 
-    }    
-
-  #menu-bottom {   
-    display: flex; 
-   
-    flex-direction: row;
-    position: absolute;
-   padding: 38px;
-   margin-top: 40px;
-   justify-content: center;
-   align-content: center;
-   align-items: flex-start;
-  }
-
-  #button-publish,
-  #profile  {
-    display: flex;
-    flex-direction: column;
-    align-items: normal;
-    cursor: pointer;
-    margin: 0;
-  }
-  
-  #button-publish img,
-  #profile img,
-  #feed-logo {
-    height: 30px;
-    margin-right: 2px;
-  }
-
-#button-logout-sair-img {
-margin-top: -30px;
-  width: 150px;
-  height: 150px;
-  font-size: 10px;
-  margin-left: -20px;
-   
-}
-
-#button-sair-feed {
-  position: relative;
-  /*background-color: green;*/
-  width: 10px;
-  height: 100px;
-}
-
-  #bumerangue-gif-feed {
-    display: flex;
-   
-    width: 100px;
-    height: 100px;
-    padding-top: 0px;
-    }
-  
-  #time-line {
-    width: 100%;
-    overflow-y: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-  }
   }

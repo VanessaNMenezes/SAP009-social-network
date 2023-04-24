@@ -18,11 +18,17 @@ export default () => {
   const feedScreenMenu = `
  <section class='register-container-feed'>
     <div id='menu-top'>
+    <figure id='button-logout-sair'>
     <div id='button-sair-feed'>
         <img id='button-logout-sair-img' src='${iconeBtnLogout}' alt='Imagem sair'>  
         </div> 
+        </figure>
         <img id='bumerangue-gif-feed' src='${iconeBtnBumerangue}'> 
     </div>
+
+    
+           
+        
     <div id='time-line'>
     </div>
     <div id='menu-bottom'>

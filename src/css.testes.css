@@ -1,0 +1,816 @@
+/*//login//
+/*  #desktop {
+  display: flex;   
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+  }
+
+  #login-content-desktop {
+    display: none; 
+    }
+  
+  .login-container { 
+  position: absolute;
+  width: 90vw;
+  height: 90vh;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 2px;
+  }
+    
+  #login-logo {
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 10%;
+  }
+  
+  .padding-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 2rem;
+  background: #DADADA;
+  border: 3px solid #000000;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  }
+    
+  #enter-button {
+  width: 17.3rem;
+  height: 2.5rem;
+  background: #DADADA;
+  color: #EE8100;
+  border-radius: 15px;
+  border: 3px solid #EE8100;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+ 
+  }
+  
+  #enter-button:hover {
+  background: #EE8100;
+  color: #ffffff;
+  opacity: 1.5;
+  }
+  
+  #error-login {
+  font-size: 1rem;    
+  padding: 1rem;
+  }
+  
+  #or-google {
+  font-size: 0.8rem;
+  margin-top: -8px;
+  margin-top: -65px;
+  }
+  
+  #login-google {
+  display: flex;   
+  font-size: 1rem; 
+  margin-left: -30px;
+  padding: 3rem;
+  margin-top: -75px;
+  }
+    
+  #image-google {
+  display: flex;  
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 190px;
+  margin-top: -65px;
+  }
+  
+  #google-account-login {
+  display: flex;   
+  font-size: 1rem; 
+  margin-left: -80px;
+  margin-top: -18%;
+  padding: 15px;
+  }
+
+  #login-register {
+  display: flex; 
+  color: #EE8100;
+  margin-left: 130px;
+  margin-top: -25%;
+  font-size: 0.8rem; 
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #EE8100;
+padding: 15px;  
+}
+
+  @media screen and (min-width: 760px) {
+  /*and (min-width: 760px) and (max-width: 1024px)*/
+/*#desktop {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 90%;
+  height: 90%;
+}
+
+  #login-content-desktop {
+  margin-left: 0;
+  display: flex;   
+  background-color: #EE8100;   
+  width: 55%;
+  height: 100%;
+ flex-direction: column;
+ justify-content: space-between;
+ gap: 30px;
+ 
+  }
+
+  #background-orange {
+    display: flex;
+    flex-direction: column;
+   margin-top: 1px;
+   height: auto;
+  padding: 2px;
+  width: auto;
+  }
+  
+  #welcome {
+  margin-top: 70px;  
+  text-align: center;
+  font-size: 60px;
+  color: #FFFFFF;
+  padding: 30px;
+  }
+  
+  #line {
+  width: 80%;
+  margin-left: 55px;
+  }
+  
+  #quality {
+  margin-top: -20px;
+  font-size: 38px; 
+  text-align: center;
+  padding: 30px;
+  }
+  
+  #actions {
+  margin-top: 310px;
+  font-size: 38px; 
+  text-align: center;
+  color: #FFFFFF;
+  }
+  
+  .login-container {
+  display: flex;
+  width: 30%;
+  margin-left: 900px;
+  height: 95%;
+  padding: 10px;
+
+  } 
+  /*modificações*/
+
+  /*#error-login {
+    font-size: 30px;    
+    padding: 2px;
+    }
+    
+    #or-google {
+    font-size: 20px;
+    margin-top: -8px;
+    }
+    
+    #login-google {
+    display: flex;   
+    font-size: 22px; 
+    margin-left: 10px;
+    padding: 50px;
+    }
+      
+    #image-google {
+    display: flex;  
+    width: 90px;
+    margin-top: -85px;
+    margin-left: 290px;
+    cursor: pointer;
+    }
+    
+    #google-account-login {
+    display: flex;   
+    font-size: 20px; 
+    margin-left: -70px;
+    margin-top: -15px;
+    padding: 10px;
+    }
+  
+    #login-register {
+    display: flex; 
+    font-size: 20px;
+    color: #EE8100;
+    margin-left: 260px;
+    margin-top: -70px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #EE8100;
+    }
+
+    .padding-inputs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25rem;
+      height: 2.5rem;
+      background: #DADADA;
+      border: 3px solid #000000;
+      border-radius: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      }
+        
+      #enter-button {
+      width: 25rem;
+      height: 3.5rem;
+      background: #DADADA;
+      color: #EE8100;
+      border-radius: 15px;
+      border: 3px solid #EE8100;
+      cursor: pointer;
+      align-items: center;
+      text-align: center;
+      font-size: 2rem;
+     
+      }
+
+      #enter-button:hover {
+        background: #EE8100;
+        color: #ffffff;
+        opacity: 1.5;
+        }
+      
+  }*/
+
+
+/*register***************/
+/*.register-container-new {
+  position: absolute;
+  width: 90vw;
+  height: 90vh;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1rem;
+}
+
+#register-logo-new {
+  width: 50%;
+}
+
+#register-new {
+  display: none;
+  }
+
+#register-new-form{
+display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ margin-top: 30px;
+ }
+ 
+  .registration-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 2rem;
+    background: #DADADA;
+    border: 3px solid #000000;
+    border-radius: 0.8rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+#register-new-button {
+  width: 15rem;
+  height: 2.5rem;
+  background: #DADADA;
+  color: #EE8100;
+  border-radius: 13px;
+  border: 3px solid #EE8100;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 5px;
+opacity: 0.6;
+}
+
+
+
+#register-new-button:hover {
+  background: #EE8100;
+  color: #FFFFFF;
+  opacity: 2.8;
+  }
+    #error-register {
+  font-size: 1rem;    
+  padding: 1rem;
+    }
+
+    #confirmation-message {
+      font-size: 1rem;    
+  padding: 1rem;
+    }
+
+    #google-account-register {
+      display: flex;   
+  font-size: 1rem; 
+  margin-left: -90px;
+  margin-top: -20%;
+  padding: 15px;
+  
+    }
+
+    #register-login-init {
+      display: flex; 
+      color: #EE8100;
+      margin-left: 130px;
+      margin-top: -23%;
+      font-size: 1rem; 
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-color: #EE8100;
+      padding: 3px;
+    }
+
+  footer {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  }
+  
+  @media screen and (min-width: 1024px) {
+  
+    .register-container-new {
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      text-align: center;
+      align-items: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 30px;
+      }
+  
+  #register-logo-new{
+    width: 25%;
+  }
+   
+    #register-new { 
+     display: flex; 
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    justify-content: center;
+     padding: 6px;
+      width: 20rem;
+      height: 1.5rem;
+      border-radius: 15px;
+      background-color: #EE8100; 
+      }
+    
+      #register-new-form{
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+margin-top: 20px;
+      }
+
+  .registration-description {
+    display: flex;
+    font-size: 1rem;
+    }
+    
+    .registration-content {
+    display: flex;
+    width: 26rem;
+    height: 2rem;
+    background: #DADADA;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    }
+    
+    #register-new-button {
+    margin: 0.5rem;
+    width: 25rem;
+    height: 2.5rem;
+    background: #DADADA;
+    color: #EE8100;
+    border: 3px solid #EE8100;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    opacity: 0.6;
+     
+    }
+    
+    #register-new-button:hover {
+    background: #EE8100;
+    color: #FFFFFF;
+    opacity: 2.8;
+    }
+    
+    #error-register {
+    font-size: 16px;
+    }
+ 
+    #confirmation-message{
+    font-size: 16px;    
+    }
+
+    #google-account-register {
+      display: flex;   
+      font-size: 16px; 
+      margin-left: -70px;
+      margin-top: -105px;
+      padding: 15px;
+      }
+    
+    #register-login-init {
+    display: flex;
+    color: #EE8100;
+    margin-left: 240px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #EE8100;
+    margin-top: -40px;
+    font-size: 16px;
+    }
+      
+    footer {
+    display: flex;
+    font-size: 12px;
+    
+    }
+  }*/
+
+
+
+/*feed*/
+/*.register-container-feed {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#menu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#bumerangue-gif-feed {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  padding-top: 0px;
+  }
+
+#time-line {
+  width: 100%;
+  overflow-y: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+#menu-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+  
+  #button-publish,
+  #profile,
+  #button-logout-sair-img {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #button-publish img,
+  #profile img,  
+  #feed-logo {
+    height: 30px;
+    margin-right: 10px;
+  }
+
+
+
+  #button-logout-sair-img {
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+    margin-left: -30px;
+  }
+
+  .date-post {
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  .content-post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .likes-posts {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 2px;
+  }
+  
+  .likes-posts figure {
+    margin: 0;
+    margin-right: 10px;
+  }
+  
+  .edit-delete-post-feed {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .edit-delete-post-feed figure {
+    margin: 0;
+    margin-left: 10px;
+  }
+  
+  .button-like-post,
+  .button-equal-activity,
+  .button-physical-benefits,
+  .button-sleep-benefits,
+  .button-mood-benefits,
+  .button-psychological-benefits {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .button-edit,
+  .button-delete {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+   @media screen and (min-width: 1024px) {
+    .register-container-feed {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+      position: absolute;
+ 
+    }    
+
+  #menu-bottom {   
+    display: flex; 
+   flex-direction: row;
+    position: absolute;
+   padding: 10px;
+   margin-top: 30px;
+   justify-content: center;
+   align-content: center;
+   
+  }
+
+  #button-publish,
+  #profile  {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  #button-publish img,
+  #profile img{
+    height: 30px;
+    margin-right: 2px;
+  }
+
+  #feed-logo {
+    height: 50px;
+  }
+#button-logout-sair-img {
+margin-top: -30px;
+  width: 150px;
+  height: 150px;
+  font-size: 10px;
+  margin-left: -20px;
+   
+}
+
+#button-sair-feed {
+  position: relative;
+  /*background-color: green;*/
+ /* width: 10px;
+  height: 100px;
+}
+
+  #bumerangue-gif-feed {
+    display: flex;
+   
+    width: 100px;
+    height: 100px;
+    padding-top: 0px;
+    }
+  
+  #time-line {
+    width: 100%;
+    overflow-y: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  }*/
+
+
+
+
+  /*publish*/
+  /*#publication {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: -10px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 90%;
+  height: 80%;
+  }
+  
+  #content-pub {
+  display: block;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+  }
+    
+  #bumerangue-gif-publish {
+  display: flex;
+  width: 8rem;
+  height: 8rem;
+  margin-top: 10px;
+  margin-left: 220px;
+  padding-top: 0px;
+  }
+    
+  #publication-text-publish {
+  display: flex;
+  width: 20rem;
+  height: 14rem;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  font-size: 3rem;
+  text-align: center;
+  justify-content: center;
+  }
+    
+  #buttons-publication {
+  display: flex;
+  cursor: pointer; 
+  margin-top: 10px;
+  gap: 90px;
+  }
+    
+  #cancel-button {
+  display: flex;
+  cursor: pointer;
+  background: #DADADA;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+  }
+    
+  #publication-button-publish {
+  display: flex;
+  cursor: pointer;
+  background: #EE8100;
+  border-radius: 10px;
+  border-color:#EE8100;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+  color: #FFFFFF;
+  }
+    
+  #publication-button-publish:hover {
+  background: #EE8100;
+  color: #FFFFFF;
+  opacity: 1.5;
+  }
+    
+  #empty-post-message {
+  font-size: 30px;
+  }
+    
+  #reactions-title {
+  display: flex;
+  font-size: 30px;
+  margin-top: 20%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -30px;
+  }
+    
+  #reactions {
+  display: flex;
+  border-radius: 40px;
+  width: 20rem;
+  height: 20rem;
+  margin-top: 10%;
+  }
+  
+  @media screen and (min-width: 760px) {
+  
+  #bumerangue-gif-publish {
+  margin-left:  420px
+  }    
+  
+  #publication-text-publish {
+  width: 35rem;
+  height: 20rem;
+  }    
+  
+  #buttons-publication {
+  gap: 300px;
+  }
+
+  #publication {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ 
+    }
+
+  } */
