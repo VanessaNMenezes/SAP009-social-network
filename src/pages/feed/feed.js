@@ -7,25 +7,37 @@ import {
   likePost,
 } from '../../firebase/firestore.js';
 import { userUID, logOut } from '../../firebase/auth.js';
+import iconeBtnLogout from '../../assets/imagens/logout.png';
+import iconeBtnBumerangue from '../../assets/imagens/bumerangue.gif';
+import LogotipoQA from '../../assets/imagens/logo.png';
+import iconeBtnPublish from '../../assets/imagens/publicar.png';
+import iconeBtnProfile from '../../assets/imagens/perfil.png';
 
 export default () => {
   const feedContainer = document.createElement('div');
   const feedScreenMenu = `
  <section class='register-container-feed'>
     <div id='menu-top'>
-        <figure id='button-logout-sair'>
-        <img src='assets/imagens/logout.png' alt='Imagem sair'>  
+    <figure id='button-logout-sair'>
+    <div id='button-sair-feed'>
+        <img id='button-logout-sair-img' src='${iconeBtnLogout}' alt='Imagem sair'>  
+        </div> 
         </figure>
-        <img id='bumerangue-gif-feed' src='assets/imagens/bumerangue.gif'>
+        <img id='bumerangue-gif-feed' src='${iconeBtnBumerangue}'> 
     </div>
-    <div id='time-line'> </div>
+
+    
+           
+        
+    <div id='time-line'>
+    </div>
     <div id='menu-bottom'>
       <figure id='profile'>
-      <img src='assets/imagens/perfil.png'> PERFIL 
+      <img src='${iconeBtnProfile}'> PERFIL 
       </figure>
-      <img src='assets/imagens/logo.png' id='feed-logo' alt='Logotipo QA- Qualidade de ações'>
+      <img src='${LogotipoQA}' id='feed-logo' alt='Logotipo QA- Qualidade de ações'>
       <figure id='button-publish'>
-       <img src='assets/imagens/publicar.png' alt='Imagem publicação'> PUBLICAR 
+       <img src='${iconeBtnPublish}' alt='Imagem publicação'> PUBLICAR 
       </figure>
     </div>
   </div>
@@ -37,14 +49,12 @@ export default () => {
   const showPosts = async () => {
     const posts = await getPosts();
     const postTemplate = posts.map((post) => `
-    <div>
     <div class='main-post-feed'>
-    <div class='name-post'> ${post.userName} </div> 
-    <div class='date-post'>${post.publishDate} </div> 
+      <div class='date-post'>${post.publishDate} </div> 
     <div class='content-post'> ${post.text} </div> 
     </div>
   <div class='likes-posts'>
-  <figure class='button-like-post' data-post-id=${post.id}> 💛 ${post.like.length}
+  <figure class='button-like-post' data-post-id=${post.id}> 💛
   </figure>
   <figure class='button-equal-activity' data-post-id=${post.id}> 🤝 
   </figure>
@@ -59,14 +69,13 @@ export default () => {
   </div>
   <div class='edit-delete-post-feed'>
   <figure class='button-edit' data-post-id=${post.id} data-user-id=${post.userId}> 
-  ✏️
-  </figure>
+  ✏️</figure>
   <figure class='button-delete' data-post-id=${post.id} data-user-id=${post.userId}>
   🗑️
   </figure>
 </div> 
 </div>
-</div>
+
 `);
 
     feedContainer.querySelector('#time-line').innerHTML = postTemplate;
@@ -119,57 +128,58 @@ export default () => {
         e.target.innerHTML = `💛 ${likeCount.length}`;
       });
     });
+
+    const buttonEqualActivity = feedContainer.querySelectorAll('.button-equal-activity');
+
+    buttonEqualActivity.forEach((button) => {
+      button.addEventListener('click', async (e) => {
+        const equalActivityCount = await likePost(e.target.dataset.postId);
+        e.target.innerHTML = `🤝 ${equalActivityCount.length}`;
+      });
+    });
+
+    const buttonPhysicalBenefits = feedContainer.querySelectorAll('.button-physical-benefits');
+
+    buttonPhysicalBenefits.forEach((button) => {
+      button.addEventListener('click', async (e) => {
+        const physicalBenefitsCount = await likePost(e.target.dataset.postId);
+        e.target.innerHTML = `😉 ${physicalBenefitsCount.length}`;
+      });
+    });
+
+    const buttonSleepBenefits = feedContainer.querySelectorAll('.button-sleep-benefits');
+
+    buttonSleepBenefits.forEach((button) => {
+      button.addEventListener('click', async (e) => {
+        const sleepBenefitsCount = await likePost(e.target.dataset.postId);
+        e.target.innerHTML = `😴 ${sleepBenefitsCount.length}`;
+      });
+    });
+
+    const buttonMoodBenefits = feedContainer.querySelectorAll('.button-mood-benefits');
+
+    buttonMoodBenefits.forEach((button) => {
+      button.addEventListener('click', async (e) => {
+        const moodBenefitsCount = await likePost(e.target.dataset.postId);
+        e.target.innerHTML = `😁 ${moodBenefitsCount.length}`;
+      });
+    });
+
+    // eslint-disable-next-line max-len
+    const buttonPsychologicalBenefits = feedContainer.querySelectorAll('.button-psychological-benefits');
+
+    buttonPsychologicalBenefits.forEach((button) => {
+      button.addEventListener('click', async (e) => {
+        const psychologicalBenefitsCount = await likePost(e.target.dataset.postId);
+        e.target.innerHTML = `💆 ${psychologicalBenefitsCount.length}`;
+      });
+    });
   };
-  // const buttonEqualActivity = feedContainer.querySelectorAll('.button-equal-activity');
-
-  // buttonEqualActivity.forEach((button) => {
-  //   button.addEventListener('click', async (e) => {
-  //     const equalActivityCount = await likePost(e.target.dataset.postId);
-  //     e.target.innerHTML = `🤝 ${equalActivityCount.length}`;
-  //   });
-  // });
-
-  // const buttonPhysicalBenefits = feedContainer.querySelectorAll('.button-physical-benefits');
-
-  // buttonPhysicalBenefits.forEach((button) => {
-  //   button.addEventListener('click', async (e) => {
-  //     const physicalBenefitsCount = await likePost(e.target.dataset.postId);
-  //     e.target.innerHTML = `😉 ${physicalBenefitsCount.length}`;
-  //   });
-  // });
-
-  // const buttonSleepBenefits = feedContainer.querySelectorAll('.button-sleep-benefits');
-
-  // buttonSleepBenefits.forEach((button) => {
-  //   button.addEventListener('click', async (e) => {
-  //     const sleepBenefitsCount = await likePost(e.target.dataset.postId);
-  //     e.target.innerHTML = `😴 ${sleepBenefitsCount.length}`;
-  //   });
-  // });
-
-  // const buttonMoodBenefits = feedContainer.querySelectorAll('.button-mood-benefits');
-
-  // buttonMoodBenefits.forEach((button) => {
-  //   button.addEventListener('click', async (e) => {
-  //     const moodBenefitsCount = await likePost(e.target.dataset.postId);
-  //     e.target.innerHTML = `😁 ${moodBenefitsCount.length}`;
-  //   });
-  // });
-
-  // eslint-disable-next-line max-len
-  // const buttonPsychologicalBenefits = feedContainer.querySelectorAll('.button-psychological-benefits');
-
-  // buttonPsychologicalBenefits.forEach((button) => {
-  //   button.addEventListener('click', async (e) => {
-  //     const psychologicalBenefitsCount = await likePost(e.target.dataset.postId);
-  //     e.target.innerHTML = `💆 ${psychologicalBenefitsCount.length}`;
-  //   });
-  // });
-
-  const buttonLogout = feedContainer.querySelector('#button-logout-sair');
+  const buttonLogout = feedContainer.querySelector('#button-sair-feed');
   buttonLogout.addEventListener('click', (event) => {
     event.preventDefault();
     logOut();
+    alert('Tem certeza que deseja sair?');
     window.location.hash = '#login';
   });
 

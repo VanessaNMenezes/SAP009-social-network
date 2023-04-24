@@ -59,6 +59,12 @@ export async function editPost(postId, textEdit) {
   });
 }
 
+// export const editPost = (postId, textEdit) => {
+// updateDoc(doc(db, 'posts', postId), {
+// text: textEdit,
+// });
+// };
+
 // Excluir post:
 export async function deletePost(postId) {
   const exclude = doc(db, 'posts', postId);

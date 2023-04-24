@@ -27,6 +27,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^25.3.0",
+    "gh-pages": "^5.0.0",
     "htmlhint": "^1.0.0",
     "jest": "^27.5.1",
     "regenerator-runtime": "^0.13.1",
@@ -43,7 +44,8 @@
     "commit": "ffa75c8b2bede153844195479abeff01f3e34227"
   },
   "dependencies": {
-    "firebase": "^9.19.1",
+    "firebase": "^9.2.0",
+    "firebase-tools": "^11.28.0",
     "firestore": "^1.1.6"
   }
 }

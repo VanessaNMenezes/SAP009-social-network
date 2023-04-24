@@ -1,11 +1,3 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  box-sizing: border-box;
-}
-
 .register-container-feed {
   width: 100%;
   max-width: 600px;
@@ -16,6 +8,10 @@ body {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #menu-top {
@@ -25,6 +21,13 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+
+#bumerangue-gif-feed {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  padding-top: 0px;
+  }
 
 #time-line {
   width: 100%;
@@ -41,14 +44,7 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
-
-  #bumerangue-gif-feed {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    padding-top: 0px;
-    }
-  
+ 
   #button-publish,
   #profile,
   #button-logout-sair {
@@ -57,7 +53,7 @@ body {
     font-weight: bold;
     cursor: pointer;
   }
-  
+ 
   #button-publish img,
   #profile img,
   #button-logout-sair img,
@@ -73,6 +69,12 @@ body {
     margin-left: -30px;
   }
 
+  .date-post {
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+ 
   .content-post {
     background-color: #fff;
     border-radius: 10px;
@@ -80,37 +82,31 @@ body {
     box-sizing: border-box;
     padding: 10px;
   }
-  
-  .date-post {
-    font-size: 14px;
-    text-align: right;
-    margin-bottom: 10px;
-  }
-  
+ 
   .likes-posts {
     display: flex;
     align-items: center;
     margin-top: 10px;
     gap: 2px;
   }
-  
+ 
   .likes-posts figure {
     margin: 0;
     margin-right: 10px;
   }
-  
+ 
   .edit-delete-post-feed {
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
     align-items: center;
   }
-  
+ 
   .edit-delete-post-feed figure {
     margin: 0;
     margin-left: 10px;
   }
-  
+ 
   .button-like-post,
   .button-equal-activity,
   .button-physical-benefits,
@@ -124,7 +120,7 @@ body {
     cursor: pointer;
     margin-right: 10px;
   }
-  
+ 
   .button-edit,
   .button-delete {
     display: flex;

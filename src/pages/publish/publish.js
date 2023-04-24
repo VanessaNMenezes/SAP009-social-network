@@ -2,13 +2,15 @@ import {
   newPost,
   editPost,
 } from '../../firebase/firestore.js';
+import iconeBtnBumerangue from '../../assets/imagens/bumerangue.gif';
+import iconeReactions from '../../assets/imagens/reacoes.gif';
 
 export default () => {
   const publishContainer = document.createElement('div');
   const publishScreen = `
   <div id='publication'>
   <div id='content-pub'>
-     <figure><img id='bumerangue-gif-publish' src='assets/imagens/bumerangue.gif'></figure>
+     <figure><img id='bumerangue-gif-publish' src='${iconeBtnBumerangue}'></figure>
      <textarea id='publication-text-publish' name='textarea' placeholder='Qual ação deseja compartilhar?'></textarea>
    </div>
 <div id='buttons-publication'>
@@ -18,7 +20,7 @@ export default () => {
 <p id='empty-post-message'> </p>
 <div id='content-reactions'>
 <h2 id='reactions-title'> Entendendo as reações</h2>
- <img id='reactions' src='assets/imagens/reacoes.gif'>
+ <img id='reactions' src='${iconeReactions}'>
 </div>
 </div>
    `;
@@ -38,7 +40,7 @@ export default () => {
     if (postText === '') {
       emptyPostMessage.innerHTML = '⚠️ POST VAZIO! Por favor, digite algo!';
     } else {
-      if (localStorage.getItem('editStatus') === 'true') { // verifica se o valor da chave "editStatus" no armazenamento local é igual a "false", se for, significa que o usuário está criando um novo post.
+      if (localStorage.getItem('editStatus') !== 'true') { // verifica se o valor da chave "editStatus" no armazenamento local é igual a "false", se for, significa que o usuário está criando um novo post.
         await newPost(postText); // E a função newPost(postText) é chamada.
       } else { // SE NÃO, se o valor da chave "editStatus" for diferente de "false":
         const postId = localStorage.getItem('postId'); // isso significa que o usuário está editando um post existente.
