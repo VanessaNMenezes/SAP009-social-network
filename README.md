@@ -1,6 +1,5 @@
-#### <div align="center"> 💻 📱 CRIANDO UMA REDE SOCIAL 📱 💻 </div>
-
-## <div align="center"> 🪃 QA: Qualidade de Ações -  Incentivando a prática de atividade física 🧡</div>
+####   💻 📱 CRIANDO UMA REDE SOCIAL 📱 💻  
+##  🪃 QA: Qualidade de Ações -  Incentivando a prática de atividade física 🧡 
 
 <div align="center"> <img src= "src/assets/imagens/logo.png" width ="500px" height = "250px"/>
 
@@ -8,7 +7,8 @@ _"A sua **qualidade de vida** é como um bumerangue, precisa ter **movimento**. 
 
  _Melhore suas ações, pratique atividade física!_
 
-### Acesse o projeto completo [CLICANDO AQUI](https://THALINascimento.github.io/SAP009-social-network/) (https://social-network-qa-1f7b1.web.app/) </div>
+### Acesse o projeto completo [acesse aqui](https://social-network-qa-1f7b1.web.app/)
+ 
 
 ***
 
